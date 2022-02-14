@@ -1,3 +1,74 @@
 
+.featured-movie__background-image {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  background-color: #0f1b2b;
+  color: white;
+}
+.featured-movie__title {
+  font-family: arial;
+}
+.featured-movie__image {
+  width: 25%;
+  height: 60vh;
+  border-radius: 25px;
+}
+.featured-movie__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 130px;
+}
+.featured-movie__article {
+  display: flex;
+  flex-direction: column;
+}
+.featured-movie__button {
+  width: 128px;
+  height: 26px;
+  left: 68px;
+  top: 307px;
+  border-radius: 25px;
+  margin-top: 35px;
+}
+.featured-movie__container-p {
+  width: 33%;
+}
+.featured-movie__p {
+  text-align: center;
+  margin-top: 25px;
+}
+.video-trailer {
+  display: none;
+  margin: 0px;
+}
 
-/*# sourceMappingURL=style-home.css.map */
+figcaption {
+  margin: 0px;
+}
+
+.genres-list {
+  background-color: #0f1b2b;
+  color: white;
+  width: 100vw;
+}
+.genres-list__title {
+  padding-left: 50px;
+  padding-top: 25px;
+  font-family: Actor;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+.genres-list__image {
+  width: 129.65px;
+  height: 194.92px;
+  left: 26px;
+  top: 440px;
+}
+.genres-list__figc {
+  padding-top: 20px;
+}

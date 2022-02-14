@@ -1,0 +1,33 @@
+.container-fav-list {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #2b3543;
+  height: 100vh;
+  color: white;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.movie__title {
+  font-family: Actor;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.movie__genred {
+  top: 5px;
+}
+.movie__poster {
+  width: 89.6px;
+  height: 108.73px;
+  left: 36px;
+  top: 110.17px;
+}
+
+/*# sourceMappingURL=style-fav-list.css.map */

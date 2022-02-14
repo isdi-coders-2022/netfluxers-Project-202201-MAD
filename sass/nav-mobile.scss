@@ -1,0 +1,12 @@
+.nav-container-mobile {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #0f1b2b;
+  gap: 50px;
+  list-style: none;
+  height: 100px;
+  &__item {
+    padding-top: 50px;
+  }
+}

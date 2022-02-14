@@ -11,41 +11,48 @@
       crossorigin="anonymous"
     ></script>
     <script src="" type="module"></script>
-    <title>Document</title>
+    <title>Details Web</title>
   </head>
   <body>
-    <section class="head-details-web">
-      <h2>NOMBRE PELI</h2>
-    </section>
-    <main class="body-details-web">
-      <div class="detail-web-image">
-        <img />
-        <div class="puntuacion">
-          <p>puntuacion</p>
-          <span>estrellas</span>
+    <main class="movies-detail">
+      <div class="background-image"></div>
+      <section class="movies-detail__section">
+        <div class="movie-detail__container">
+          <img class="movie-detail__img" src="" />
+          <div class="score-container">
+            <p>puntuacion</p>
+            <div class="score-container__text">
+              <img src="" alt="" class="icons__star icons__star--1" />
+              <img src="" alt="" class="icons__star icons__star--2" />
+              <img src="" alt="" class="icons__star icons__star--3" />
+              <img src="" alt="" class="icons__star icons__star--4" />
+              <img src="" alt="" class="icons__star icons__star--5" />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="details-web-item">
-        <div class="details-web-generos">
-          <p>Terror</p>
-          <p>Suspense</p>
+        <div>
+          <h2 class="movies-detail__title">TITULO</h2>
+          <div class="genres">
+            <img src="" alt="" class="icons__heart" />
+            <p class="genres-1">Action</p>
+            <p class="genres-2">Thriller</p>
+            <p class="genres-3">Horror</p>
+          </div>
+          <p class="movie-detail__summary">aqui va descripcion de l a peli</p>
+          <h3 class="cast">Cast</h3>
+          <div class="cast__container">
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
+          </div>
         </div>
-        <div class="details-web-text">TEXTO</div>
-        <div class="details-web-cast">
-          <h3>CAST</h3>
-          <ul>
-            <li><img /></li>
-            <li><img /></li>
-            <li><img /></li>
-            <li><img /></li>
-            <li><img /></li>
-          </ul>
-        </div>
-      </div>
+      </section>
+      <section class="movie-trailer">
+        <h4>Trailer</h4>
+        <video src=""></video>
+      </section>
     </main>
-    <section class="details-web-video">
-      <h4>Trailer</h4>
-      <video>VIDEO</video>
-    </section>
   </body>
 </html>

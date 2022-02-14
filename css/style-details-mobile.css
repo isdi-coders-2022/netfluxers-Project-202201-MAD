@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0F1B2B;
+  font-family: "Montserrat", sans-serif;
+}
+
+.background-detail-mobile {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.background-detail-image {
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+}
+
+.icon__heart {
+  color: red;
+  padding-top: 7px;
+}
+
+.icon__arrow {
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.movies-detail__img {
+  width: 50%;
+  height: 300px;
+  margin: -50px 100px 0px 100px;
+  position: absolute;
+  border-radius: 5px;
+  top: 150px;
+}
+.movies-detail__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 110px;
+  color: white;
+  margin-bottom: 25px;
+}
+.movies-detail__title h2 {
+  margin-right: 10px;
+}
+.movies-detail__item {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.button-details__container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-details__item {
+  list-style: none;
+  margin: 20px 10px 0 10px;
+  border: 2px white solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+.button-details__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.synopsis-mobile {
+  width: 90%;
+  padding-top: 30px;
+  margin: auto;
+  color: white;
+}
+
+.movies-info__trailer {
+  width: 90%;
+  margin: auto;
+}
+
+.movies-info__cast {
+  display: flex;
+}
+
+/*# sourceMappingURL=style-details-mobile.css.map */

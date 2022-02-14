@@ -1,0 +1,43 @@
+body {
+  background-color: #0f1b2b;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-detail__backdrop {
+  background-image: url(https://image.tmdb.org/t/p/w1280//tY6zVyt0OubPgCapbXFJLKhQqSu.jpg);
+  width: 100vw;
+  opacity: 60%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.movie-detail__title {
+  font-size: 100px;
+}
+.movie-detail__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.movie-detail__image-score {
+  margin: 70px;
+}
+.movie-detail__img {
+  width: 400px;
+}
+.movie-detail__text {
+  margin: 70px;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=details-web.css.map */

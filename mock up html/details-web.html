@@ -6,50 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/details-web.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/28a299d774.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="" type="module"></script>
     <title>Details Web</title>
   </head>
+
   <body>
     <main class="main">
+      <div class="background-image"></div>
       <section class="movie-detail">
-        <div class="movie-detail__backdrop">
-          <div class="movie-detail__container">
-            <div class="movie-detail__image-score">
-              <img
-                class="movie-detail__img"
-                src="https://image.tmdb.org/t/p/w1280//8kSerJrhrJWKLk1LViesGcnrUPE.jpg "
-              />
-              <div class="score-container">
-                <p>puntuacion</p>
-                <div class="score-container__text">
-                  <i class="icons__star icons__star--1">⭐️</i>
-                  <i class="icons__star icons__star--1">⭐️</i>
-                  <i class="icons__star icons__star--1">⭐️</i>
-                  <i class="icons__star icons__star--1">⭐️</i>
-                  <i class="icons__star icons__star--1">⭐️</i>
-                </div>
-              </div>
+        <div class="movie-detail__image-score">
+          <img
+            class="movie-detail__img"
+            src="https://image.tmdb.org/t/p/w1280//8kSerJrhrJWKLk1LViesGcnrUPE.jpg "
+          />
+          <div class="score">
+            <p class="score__text">puntuacion</p>
+            <div class="score__container">
+              <i class="fa-solid fa-star icon icon--1"></i>
+              <i class="fa-solid fa-star icon icon--2"></i>
+              <i class="fa-solid fa-star icon icon--3"></i>
+              <i class="fa-solid fa-star icon icon--4"></i>
+              <i class="fa-solid fa-star icon icon--5"></i>
             </div>
-            <div class="movie-detail__text">
-              <h2 class="movie-detail__title">TITULO</h2>
-              <div class="genres">
-                <img src="" alt="" class="icons__heart" />
-                <p class="genres-1">Action</p>
-                <p class="genres-2">Thriller</p>
-                <p class="genres-3">Horror</p>
-              </div>
-              <p class="movie-detail__summary">
-                aqui va descripcion de l a peli
-              </p>
-              <h3 class="cast">Cast</h3>
-              <div class="cast__container">
-                <img src="" alt="" class="cast__image" />
-                <img src="" alt="" class="cast__image" />
-                <img src="" alt="" class="cast__image" />
-                <img src="" alt="" class="cast__image" />
-                <img src="" alt="" class="cast__image" />
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="movie-detail__info">
+          <h2 class="movie-detail__title">TITULO</h2>
+          <div class="genres">
+            <i class="genres__icon icon__heart fa-solid fa-heart"></i>
+            <p class="genres__button genres__button--1">Action</p>
+            <p class="genres__button genres__button--2">Thriller</p>
+            <p class="genres__button genres__button--3">Horror</p>
+          </div>
+          <p class="movie-detail__summary">aqui va descripcion de l a peli</p>
+          <div class="cast">
+            <h3 class="cast__title">Cast</h3>
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
+            <img src="" alt="" class="cast__image" />
           </div>
         </div>
       </section>
@@ -58,6 +58,5 @@
         <video src=""></video>
       </section>
     </main>
-    <footer></footer>
   </body>
 </html>

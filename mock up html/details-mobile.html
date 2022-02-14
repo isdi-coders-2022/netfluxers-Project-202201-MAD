@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c3c5a054e8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-</head>
-<body>
-    <div class="background-details-mobile">
-        <div class="nav-mobile">
-        <h1>NETFLUX</h1>
-        <span>Lupa</span>
-        </div>
-        <span class="flecha-atras"></span>
-    </div>
-    <div class="details-mobile">
-        <img src="">
-        <h2>TITULO</h2> <span>❤</span>
-        <p>DURACION / IDIOMA</p>
-        <p>GENERO</p>
-        <p>AÑO</p>
-    <div class="date-film-mobile">
-            <p>Puntuacion</p>
+  </head>
+  <body>
+    <section class="movies-detail__section">
+      <div class="background-details-mobile">
+        <i class="fa-solid fa-arrow-left icon__arrow"></i>
+      </div>
 
-            <span>⭐⭐⭐⭐⭐</span>
-    </div>
-        <div class="button-details-mobile">
-            <div>
-                <p>detail</p>
-                <p>trailer</p>
-                <p>Casting</p>
-            </div>
+      <div class="movies-detail">
+        <img class="movie-detail__img" src="" />
+        <h2 class="movies-detail__title">TITULO</h2>
+        <i class="icon__heart fa-solid fa-heart"></i>
+        <p class="movies-detail__item">DURACION / IDIOMA</p>
+        <p class="movies-detail__item">GENERO</p>
+        <p class="movies-detail__item">AÑO</p>
+      </div>
+      <div class="score-container">
+        <p class="score-container__text">Puntuacion</p>
+        <div class="icon-container">
+          <i class="fa-solid fa-star icon icon--1"></i>
+          <i class="fa-solid fa-star icon icon--2"></i>
+          <i class="fa-solid fa-star icon icon--3"></i>
+          <i class="fa-solid fa-star icon icon--4"></i>
+          <i class="fa-solid fa-star icon icon--5"></i>
         </div>
-    </div>
-    <div class="synopsis-mobile">
-        <h3>Synopsis</h3>
-        <p>AKI VA LA SYNOPSIS</p>
-    </div>
-    <div class="trailer-mobile">
-        <video>EL VIDEO</video>
-    </div>
-    <div class="cast-mobile">
-        <ul>
-            <li>
-                <img>
-                <p>nombre</p>
-            </li>
-            <li>
-                <img>
-                <p>nombre</p>
-            </li>
-            <li>
-                <img>
-                <p>nombre</p>
-            </li>
-        </ul>
-    </div>
-    <div class="header-mobile">
-        <ul>
-            <li>🧿</li>
-            <li>❤</li>
-            <li>👨‍👨‍👦‍👦</li>
-        </ul>
-    </div>
-</body>
+      </div>
+    </section>
+
+    <section class="movies-info">
+      <ul class="button-details__container">
+        <li class="button-details__item"><a href="">detail</a></li>
+        <li class="button-details__item"><a href="">trailer</a></li>
+        <li class="button-details__item"><a href="">cast</a></li>
+      </ul>
+      <div class="movies-info__detail">
+        <div class="synopsis-mobile">
+          <h3>Synopsis</h3>
+          <p>AKI VA LA SYNOPSIS</p>
+        </div>
+      </div>
+
+      <div class="movies-info__trailer">
+        <video class="trailer">EL VIDEO</video>
+      </div>
+      <div class="movies-info__cast">
+        <figure>
+          <img src="" alt="" class="cast-img" />
+          <figcaption class="cast-figc"></figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="" class="cast-img" />
+          <figcaption class="cast-figc"></figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="" class="cast-img" />
+          <figcaption class="cast-figc"></figcaption>
+        </figure>
+      </div>
+    </section>
+  </body>
 </html>

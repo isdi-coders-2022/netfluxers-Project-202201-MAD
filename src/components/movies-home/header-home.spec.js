@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { HeaderHome } from '../header-home';
+import { HeaderHome } from './header-home';
 
 test('Render HeaderHome', () => {
   render(<HeaderHome />);

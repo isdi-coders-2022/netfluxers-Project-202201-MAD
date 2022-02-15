@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { NavMobile } from '../nav-mobile';
+import { NavMobile } from './nav-mobile';
 
 test('Render NavMobile', () => {
   render(<NavMobile />);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getDetail } from '../services/apiTmdb';
+import { getDetail } from '../../services/apiTmdb';
 import './style-home-header.scss';
 
 export function HeaderHome() {

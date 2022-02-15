@@ -1,15 +1,14 @@
 import { render, screen } from '@testing-library/react';
-import { FavoriteMovie } from '../fav-movie';
+import { FavoriteMovie } from './fav-movie';
 
 test('Render FavoriteMovie', () => {
   render(<FavoriteMovie />);
   const title = screen.getByText(/james bond collection/i);
-  expect (title).toBeInTheDocument();
+  expect(title).toBeInTheDocument();
   const image = screen.getByRole('img');
-  expect (image).toBeInTheDocument();
+  expect(image).toBeInTheDocument();
   const genero = screen.getByText(/crime/i);
-  expect (genero).toBeInTheDocument();
+  expect(genero).toBeInTheDocument();
   const time = screen.getByText(/2h 30min/i);
-  expect (time).toBeInTheDocument();
-
+  expect(time).toBeInTheDocument();
 });

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { NavDesktop } from '../nav-desktop';
+import { NavDesktop } from './nav-desktop';
 
 test('Render NavDesktop', () => {
   render(<NavDesktop />);

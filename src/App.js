@@ -1,8 +1,6 @@
 import './App.css';
-import { FooterDesktop } from './components/footer-desktop';
-import { NavMobile } from './components/nav-mobile';
-import { NavDesktop } from './components/nav-desktop';
-import { HeaderHome } from './components/header-home';
+import { FooterDesktop } from './components/footer/footer-desktop';
+import { HeaderHome } from './components/movies-home/header-home';
 
 function App() {
   return (

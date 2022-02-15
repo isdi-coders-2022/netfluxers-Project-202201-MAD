@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { GenredMovie } from '../genred-movie';
+import { GenredMovie } from './genres-home';
 
 test('Render GenredMovie', () => {
   render(<GenredMovie />);

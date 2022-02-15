@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import { FooterDesktop } from './component/footer-desktop';
-import { NavMobile } from './component/nav-mobile';
+import { FooterDesktop } from './components/footer-desktop';
+import { NavMobile } from './components/nav-mobile';
+import { NavDesktop } from './components/nav-desktop';
+import { HeaderHome } from './components/header-home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header" />
-      <NavMobile />
       <FooterDesktop />
     </div>
   );

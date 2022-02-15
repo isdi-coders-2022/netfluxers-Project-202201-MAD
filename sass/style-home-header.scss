@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-movie__background-image {
+  opacity: 90%;
+}
+.featured-movie {
+  color: white;
+
+  &__background-image {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    filter: brightness(0.2);
+  }
+  &__image {
+    width: 100%;
+    height: 500px;
+    border-radius: 25px;
+  }
+
+  .movie-info {
+    width: 500px;
+    margin-top: 80px;
+    &__title {
+      font-size: 40px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    &__description {
+      margin-top: 25px;
+    }
+    &__button {
+      width: 200px;
+      margin-top: 50px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background-color: transparent;
+      text-decoration: none;
+      color: white;
+      border-color: white;
+      font-size: 18px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 100px;
+
+    width: 100%;
+    margin: auto;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    width: 128px;
+    height: 26px;
+    left: 68px;
+    top: 307px;
+    border-radius: 25px;
+    margin-top: 35px;
+  }
+
+  &__container-p {
+    width: 33%;
+  }
+  &__p {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  &__text {
+  }
+}
+
+.video-trailer {
+  display: none;
+  margin: 0px;
+}
+
+figcaption {
+  margin: 0px;
+}
+
+.genre {
+  color: white;
+  background-color: #1d232c;
+  margin: 0px;
+
+  &__figure {
+    padding-left: 50px;
+  }
+  &__image {
+    width: 200px;
+    height: 300px;
+    left: 26px;
+    top: 440px;
+  }
+  &__figc {
+    font-size: 10px;
+    width: 100px;
+  }
+
+  &__title {
+    font-family: 'Actor', sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 70px;
+  }
+}
+
+.genre--suspense,
+.genre--horror,
+.genre--action,
+.genre--romance,
+.genre--new-releases {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}

@@ -1,14 +1,15 @@
 import { GenredMovie } from '../movies-home/genres-home';
 import { HeaderHome } from '../movies-home/header-home';
 
+
 export function ContainerHome() {
   return (
     <>
       <HeaderHome />
-      <section classNameName="genre">
-        <div classNameName="new-releases">
-          <h2 classNameName="genre__title">New releases</h2>
-          <div classNameName="genre genre--new-releases">
+      <section className="genre">
+        <div className="new-releases">
+          <h2 className="genre__title">New releases</h2>
+          <div className="genre genre--new-releases">
             <GenredMovie />
           </div>
         </div>

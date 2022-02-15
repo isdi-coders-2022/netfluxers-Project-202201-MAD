@@ -1,3 +1,5 @@
+import './style-home-header.scss';
+
 export function GenredMovie() {
   // const [movie, setMovie] = useState({});
 

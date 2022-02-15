@@ -15,3 +15,8 @@ export function getTrailer(idmovie) {
     `http://api.themoviedb.org/3/movie/${idmovie}/videos?api_key=4b4f416a1b778e7770adf119452664ae`
   );
 }
+export function getMovieGenred(idgenre) {
+  return axios.get(
+    `https://api.themoviedb.org/3/discover/movie?with_genres=${idgenre}&primary_release_year=2022&api_key=4b4f416a1b778e7770adf119452664ae`
+  );
+}

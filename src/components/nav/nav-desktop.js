@@ -1,7 +1,9 @@
 import './style-nav-desktop.scss';
 
+
 export function NavDesktop() {
   return (
+    <div className="container">
     <div className="nav-container">
       <h1 className="header-title">NETFLUX</h1>
       <ul className="nav-container-desktop">
@@ -15,6 +17,7 @@ export function NavDesktop() {
           <a href="">Account</a>
         </li>
       </ul>
+    </div>
     </div>
   );
 }

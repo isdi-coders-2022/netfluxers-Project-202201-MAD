@@ -1,4 +1,12 @@
 export function GenredMovie() {
+  // const [movie, setMovie] = useState({});
+
+  // useEffect(() => {
+  //   getGenre(12).then((data) => {
+  //     // setMovie(data.data);
+  //     console.log(data.data.results[1]);
+  //   });
+  // }, []);
   return (
     <figure data-testid="figure" className="genre__figure">
       <img

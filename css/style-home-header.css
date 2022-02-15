@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,12 +7,20 @@
 }
 
 .featured-movie__background-image {
+  opacity: 90%;
+}
+
+.featured-movie {
+  color: white;
+}
+.featured-movie__background-image {
   width: 100%;
   height: 100vh;
   position: relative;
+  filter: brightness(0.2);
 }
 .featured-movie__image {
-  width: 300px;
+  width: 100%;
   height: 500px;
   border-radius: 25px;
 }
@@ -19,15 +29,22 @@
   margin-top: 80px;
 }
 .featured-movie .movie-info__title {
-  font-size: 50px;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 .featured-movie .movie-info__description {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .featured-movie .movie-info__button {
+  width: 200px;
   margin-top: 50px;
   padding: 5px 10px;
   border-radius: 20px;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border-color: white;
+  font-size: 18px;
 }
 .featured-movie__container {
   display: flex;
@@ -65,28 +82,39 @@ figcaption {
   margin: 0px;
 }
 
-.genres-list {
-  background-color: #0f1b2b;
+.genre {
   color: white;
-  width: 100vw;
+  background-color: #1d232c;
+  margin: 0px;
 }
-.genres-list__title {
+.genre__figure {
   padding-left: 50px;
-  padding-top: 25px;
-  font-family: Actor;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
 }
-.genres-list__image {
-  width: 129.65px;
-  height: 194.92px;
+.genre__image {
+  width: 200px;
+  height: 300px;
   left: 26px;
   top: 440px;
 }
-.genres-list__figc {
+.genre__figc {
+  font-size: 10px;
+  width: 100px;
+}
+.genre__title {
+  font-family: "Actor", sans-serif;
+  font-size: 18px;
   padding-top: 20px;
+  padding-left: 70px;
 }
 
-/*# sourceMappingURL=style-home.css.map */
+.genre--suspense,
+.genre--horror,
+.genre--action,
+.genre--romance,
+.genre--new-releases {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=style-home-header.css.map */

@@ -1,9 +1,9 @@
-.header {
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.header .header-title {
+.nav-container .header-title {
   padding-left: 50px;
   width: 99px;
   height: 18px;
@@ -17,7 +17,7 @@
   color: red;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header .nav-container-desktop {
+.nav-container .nav-container-desktop {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,7 +25,7 @@
   padding-right: 50px;
   gap: 40px;
 }
-.header .nav-container-desktop__item {
+.nav-container .nav-container-desktop__item {
   padding-top: 25px;
   width: 71px;
   font-family: Actor;

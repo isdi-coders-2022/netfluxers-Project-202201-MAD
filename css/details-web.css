@@ -1,43 +1,76 @@
-body {
-  background-color: #0f1b2b;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
-.movie-detail__backdrop {
+.background-image {
   background-image: url(https://image.tmdb.org/t/p/w1280//tY6zVyt0OubPgCapbXFJLKhQqSu.jpg);
   width: 100vw;
-  opacity: 60%;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.movie-detail__title {
-  font-size: 100px;
-}
-.movie-detail__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.movie-detail__image-score {
-  margin: 70px;
-}
-.movie-detail__img {
-  width: 400px;
-}
-.movie-detail__text {
-  margin: 70px;
+  height: 400px;
+  position: relative;
 }
 
-.score-container {
+.movie-detail {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 150px;
+  position: absolute;
+  top: 10px;
+}
+.movie-detail__info {
+  background-color: none;
+}
+.movie-detail__img {
+  width: 300px;
+}
+.movie-detail__image-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 150px 0 0;
+}
+.movie-detail__title {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.score {
+  display: flex;
+  margin: 20px;
+}
+
+.genres {
+  display: flex;
+  margin-top: 20px;
+}
+.genres__icon {
+  padding: 5px 0 0 0;
+  margin: 0 10px;
+  color: red;
+}
+.genres__button {
+  margin: 5px;
+  border: 1px solid white;
+  background-color: #0f1b2b;
+  color: white;
+  padding: 7px 14px;
+  font-size: 8px;
+  border-radius: 40%;
+  cursor: pointer;
+}
+
+.cast {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cast__image {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=details-web.css.map */

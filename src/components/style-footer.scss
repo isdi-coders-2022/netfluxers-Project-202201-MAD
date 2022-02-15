@@ -1,15 +1,18 @@
+a {
+  text-decoration: none;
+}
 .footer-container-desktop {
   width: 100vw;
   height: 250px;
-  background-image: url('../images/image_footer.png');
+  background-image: url('../assets/image_footer.png');
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   &__info {
     padding-left: 50px;
-    padding-top: 35px;
     font-size: 25px;
+    padding-top: 35px;
   }
   &__trademark {
     padding-right: 50px;
@@ -27,6 +30,7 @@
     // width: 150px;
     // height: 18px;
     padding-right: 50px;
+    padding-bottom: 30px;
     font-family: Actor;
     font-style: normal;
     font-weight: normal;
@@ -37,7 +41,7 @@
   }
 
   &__container-item {
-    width: 130px;
+    width: 150px;
     left: 45px;
     font-family: Aldrich;
     font-style: normal;
@@ -46,5 +50,6 @@
     line-height: 18px;
     color: #ffffff;
     opacity: 0.5;
+    padding-top: 20px;
   }
 }

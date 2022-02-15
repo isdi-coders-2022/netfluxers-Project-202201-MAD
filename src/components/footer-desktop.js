@@ -21,10 +21,10 @@ export function FooterDesktop() {
         <div className="footer-container-desktop__socialmedia-container">
           <h4 className="footer-container-desktop__title">Follow Us</h4>
           <div className="footer-container-desktop__socialmedia">
-            <img src="../images/icon_facebook.png" alt="" />
-            <img src="../images/icon_instagram.png" alt="" />
-            <img src="../images/icon_youtube.png" alt="" />
-            <img src="../images/icon_twitter.png" alt="" />
+            <img src="../assets/icon_facebook.png" alt="" />
+            <img src="../assets/icon_instagram.png" alt="" />
+            <img src="../assets/icon_youtube.png" alt="" />
+            <img src="../assets/icon_twitter.png" alt="" />
           </div>
         </div>
         <div className="footer-container-desktop__trademark">

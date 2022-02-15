@@ -1,4 +1,10 @@
 import './style-footer.scss';
+import {
+  AiFillTwitterSquare,
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillYoutube,
+} from 'react-icons/ai';
 
 export function FooterDesktop() {
   return (
@@ -21,10 +27,13 @@ export function FooterDesktop() {
         <div className="footer-container-desktop__socialmedia-container">
           <h4 className="footer-container-desktop__title">Follow Us</h4>
           <div className="footer-container-desktop__socialmedia">
-            <img src="/src/assets/incon_facebook.png" alt="" />
-            <img src="/src/assets/icon_instagram.png" alt="" />
-            <img src="/src/assets/icon_youtube.png" alt="" />
-            <img src="/src/assets/icon_twitter.png" alt="" />
+            <AiFillFacebook color="white" className="footer-icon" />
+            <AiFillInstagram color="white" className="footer-icon" />
+            <AiFillYoutube color="white" className="footer-icon" />
+            <AiFillTwitterSquare
+              color="white"
+              className="additional-class-name"
+            />
           </div>
         </div>
         <div className="footer-container-desktop__trademark">

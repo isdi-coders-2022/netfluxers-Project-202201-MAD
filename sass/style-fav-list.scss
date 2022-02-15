@@ -1,10 +1,29 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .container-fav-list {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
+  
+  width: 100%;
   background-color: #2b3543;
   height: 100vh;
   color: white;
+  
+}
+.container-fav-list-title{
+  width: 100%;
+  
+}
+.container-fav-list-movie{
+  display: flex;
+
+  .movie__poster{
+    margin: auto;
+  }
+  .movie-stars{
+    margin: auto;
+  }
 }
 .movie {
   display: flex;
@@ -29,8 +48,8 @@
   }
 
   &__poster {
-    width: 89.6px;
-    height: 108.73px;
+    width: 155px;
+    height: 175px;
     left: 36px;
     top: 110.17px;
   }

@@ -9,4 +9,5 @@ test('Render FooterDesktop', () => {
   expect(elementFollow).toBeInTheDocument();
   expect(elementNetflux).toBeInTheDocument();
   expect(elementTrademark).toBeInTheDocument();
+  
 });

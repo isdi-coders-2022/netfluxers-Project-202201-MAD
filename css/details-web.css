@@ -3,10 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   background-color: #0f1b2b;
-
-
   color: white;
   font-family: "Montserrat", sans-serif;
 }
@@ -22,35 +19,21 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
-
-  margin: 150px;
-  position: absolute;
-  top: 10px;
-}
-.movie-detail__info {
-  background-color: none;
-
 }
 .movie-detail__img {
-  width: 300px;
+  width: 400px;
 }
 .movie-detail__image-score {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   position: absolute;
   top: 20%;
   left: 5%;
-
-  margin: 0 150px 0 0;
-
 }
 .movie-detail__title {
   font-size: 80px;
   margin-bottom: 30px;
-
   position: absolute;
   top: 50%;
   left: 42%;
@@ -144,42 +127,6 @@
   height: 5px;
   margin: 70px 0;
   width: 100%;
-=======
-}
-
-.score {
-  display: flex;
-  margin: 20px;
-}
-
-.genres {
-  display: flex;
-  margin-top: 20px;
-}
-.genres__icon {
-  padding: 5px 0 0 0;
-  margin: 0 10px;
-  color: red;
-}
-.genres__button {
-  margin: 5px;
-  border: 1px solid white;
-  background-color: #0f1b2b;
-  color: white;
-  padding: 7px 14px;
-  font-size: 8px;
-  border-radius: 40%;
-  cursor: pointer;
-}
-
-.cast {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.cast__image {
-  border-radius: 50%;
-
 }
 
 /*# sourceMappingURL=details-web.css.map */

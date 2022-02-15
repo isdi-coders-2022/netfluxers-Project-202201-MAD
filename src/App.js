@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import { DetailsCast } from './components/details-web/details-cast';
+import { DetailsFeature } from './components/details-web/details-feature';
 import { FooterDesktop } from './components/footer/footer-desktop';
 import { NavDesktop } from './components/nav/nav-desktop';
 import { ContainerHome } from './components/container-home/container-home';

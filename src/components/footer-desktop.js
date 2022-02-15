@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
+import { getDetail } from '../services/apiTmdb';
 import './style-footer.scss';
 
 export function FooterDesktop() {
+  // useEffect(() => {
+  // getDetail(550).then((data) => data);
+  // }, []);
+
   return (
     <footer>
       <div className="footer-container-desktop">

@@ -7,6 +7,7 @@ import { HeaderHome } from './components/header-home';
 function App() {
   return (
     <div className="App">
+      <HeaderHome />
       <FooterDesktop />
     </div>
   );

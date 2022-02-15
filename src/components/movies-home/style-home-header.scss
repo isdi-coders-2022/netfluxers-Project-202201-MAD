@@ -11,6 +11,7 @@
 }
 .featured-movie {
   color: white;
+  background-color: #0f1b2b;
 
   &__background-image {
     width: 100%;
@@ -94,7 +95,7 @@ figcaption {
 .genre {
   color: white;
   background-color: #0f1b2b;
-  margin: 0px;
+  margin: 0;
 
   &__figure {
     padding-left: 50px;
@@ -108,13 +109,15 @@ figcaption {
   &__figc {
     font-size: 10px;
     width: 100px;
+    margin: auto;
   }
 
   &__title {
     font-family: 'Actor', sans-serif;
     font-size: 18px;
     padding-top: 20px;
-    padding-left: 70px;
+    text-align: start;
+    padding-left: 20px;
   }
 }
 
@@ -125,5 +128,6 @@ figcaption {
 .genre--new-releases {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }

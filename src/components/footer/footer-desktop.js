@@ -30,10 +30,7 @@ export function FooterDesktop() {
             <AiFillFacebook color="white" className="footer-icon" />
             <AiFillInstagram color="white" className="footer-icon" />
             <AiFillYoutube color="white" className="footer-icon" />
-            <AiFillTwitterSquare
-              color="white"
-              className="additional-class-name"
-            />
+            <AiFillTwitterSquare color="white" className="footer-icon" />
           </div>
         </div>
         <div className="footer-container-desktop__trademark">

@@ -25,15 +25,18 @@ a {
     display: flex;
     justify-content: center;
     gap: 25px;
-    .footer-icon, .additional-class-name{
+    .footer-icon {
       width: 2em;
       height: 2em;
+    }
+    .footer-icon path:hover {
+      color: red;
     }
   }
   &__title {
     // width: 150px;
     // height: 18px;
-    
+
     padding-bottom: 30px;
     font-family: Actor;
     font-style: normal;

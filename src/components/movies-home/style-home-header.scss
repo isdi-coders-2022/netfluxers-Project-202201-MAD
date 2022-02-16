@@ -121,6 +121,9 @@ figcaption {
     padding-left: 20px;
   }
 }
+button :hover {
+  background-color: red;
+}
 
 .genre--suspense,
 .genre--horror,

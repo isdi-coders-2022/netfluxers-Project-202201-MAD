@@ -13,10 +13,6 @@ function App() {
       <NavDesktop />
       <Routes>
         <Route path="/" element={<ContainerHome />} />
-        {/* <Route path="/home" element={<ToDo />} />
-        <Route path="/gents" element={<GentlemenPage />} />
-        <Route path="/detail/:id" element={<Detail />} />
-        <Route path="/about" element={<About />} /> */}
         <Route path="/favorites-list" element={<ContainerFav />} />
         <Route path="/details" element={<ContainerDetails />} />
         <Route path="*" element={<ContainerHome />} />

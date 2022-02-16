@@ -1,25 +1,35 @@
+import { useEffect, useState } from 'react';
+import { getMovieGenres } from '../../services/apiTmdb';
 import './style-home-header.scss';
 
-export function GenredMovie() {
-  // const [movie, setMovie] = useState({});
+export function GenredMovie({genred}) {
+ const [movie, setMovie] = useState([]);
 
-  // useEffect(() => {
-  //   getGenre(12).then((data) => {
-  //     // setMovie(data.data);
-  //     console.log(data.data.results[1]);
-  //   });
-  // }, []);
+  useEffect(() => {
+    getMovieGenres(genred).then((data) => {
+      setMovie(data.data.results);
+      console.log(data.data.results);
+    });
+  }, []);
+
+
   return (
+    <>
+    {movie.map((item, index) => index < 7 && 
+    
     <figure data-testid="figure" className="genre__figure">
       <img
         data-testid="poster"
-        src="https://image.tmdb.org/t/p/w1280//8kSerJrhrJWKLk1LViesGcnrUPE.jpg"
+        src={`https://image.tmdb.org/t/p/w1280/${item.poster_path}`}
         alt=""
         className="genre__image"
       />
       <figcaption data-testid="figcaption" className="genre__figc">
-        A Disgrace to Criminals Everywhere.
+        {item.title}
       </figcaption>
-    </figure>
+    </figure>)}
+   
+
+    </>
   );
 }

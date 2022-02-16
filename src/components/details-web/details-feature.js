@@ -4,11 +4,11 @@ import { AiFillStar, AiFillHeart } from 'react-icons/ai';
 import { getDetail } from '../../services/apiTmdb';
 import './details-web.scss';
 
-export function DetailsFeature() {
-  const [movie, setMovie] = useState({});
+export function DetailsFeature({ id }) {
+  const [movie, setMovie] = useState();
 
   useEffect(() => {
-    getDetail(550).then((data) => {
+    getDetail(id).then((data) => {
       setMovie(data.data);
     });
   }, []);

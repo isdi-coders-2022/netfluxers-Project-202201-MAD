@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { AiFillStar, AiFillHeart } from 'react-icons/ai';
 import { getDetail } from '../../services/apiTmdb';
+import { SetFav } from '../../services/apiLocal';
 import './details-web.scss';
 
 export function DetailsFeature({ id }) {
@@ -12,6 +13,11 @@ export function DetailsFeature({ id }) {
       setMovie(data.data);
     });
   }, []);
+
+  function handleClick(obj) {
+    SetFav(obj);
+    // console.log(obj);
+  }
   console.log(movie);
 
   return (
@@ -42,7 +48,18 @@ export function DetailsFeature({ id }) {
                 })}
               </div>
               <div className="heart__container">
-                <AiFillHeart className="heart__icon" />
+                <AiFillHeart
+                  onClick={() => {
+                    handleClick({
+                      id: movie.id,
+                      original_title: movie.original_title,
+                      poster_path: movie.poster_path,
+                      runtime: movie.runtime,
+                      vote_average: movie.vote_average,
+                    });
+                  }}
+                  className="heart__icon"
+                />
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ContainerHome />} />
         <Route path="/favorites-list" element={<ContainerFav />} />
-        <Route path="/details" element={<ContainerDetails />} />
+        <Route path="/details/:id" element={<ContainerDetails />} />
         <Route path="*" element={<ContainerHome />} />
       </Routes>
       <FooterDesktop />

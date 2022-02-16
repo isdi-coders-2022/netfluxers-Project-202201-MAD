@@ -19,6 +19,6 @@ export function getTrailer(idmovie) {
 }
 export function getMovieGenres(idgenre) {
   return axios.get(
-    `https://api.themoviedb.org/3/discover/movie?with_genres=${idgenre}&primary_release_year=2022&api_key=${API_KEY}`
+    `https://api.themoviedb.org/3/discover/movie?with_genres=${idgenre}&primary_release_year=2021&api_key=${API_KEY}`
   );
 }

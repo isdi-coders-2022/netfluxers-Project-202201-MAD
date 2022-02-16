@@ -1,54 +1,29 @@
 import './style-fav-list.scss';
-import { useEffect,useState } from 'react';
-import { GetAllLocalFav } from '../../services/apiLocal';
+import { AiFillStar, AiFillHeart } from 'react-icons/ai';
 
-
-export function FavoriteMovie() {
-  const [movieFav, setMovieFav] = useState();
-
-  useEffect(() => {
-    GetAllLocalFav().then((result) => {
-      setMovieFav(result.data);
-      console.log(movieFav);
-    });
-  }, []);
-
-  return(
+export function FavoriteMovie({ movie }) {
+  console.log(movie);
+  return (
     <div className="movie">
-    <img
-      className="movieposter"
-      src="https://image.tmdb.org/t/p/w1280/HORpg5CSkmeQlAolx3bKMrKgfi.jpg"
-      alt=""
-    />
+      <img
+        className="movie__poster"
+        src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
+        alt=""
+      />
 
-    <div className="movie-stars">
-      <i className="moviestars stars-1">⭐</i>
-      <i className="moviestars stars-2">⭐</i>
-      <i className="moviestars stars-3">⭐</i>
-      <i className="moviestars stars-4">⭐</i>
-      <i className="moviestars stars-5">⭐</i>
+      <div className="movie-stars">
+        {[1, 2, 3, 4, 5].map((e, i) => {
+          if (i + 1 < movie.vote_average / 2) {
+            return <AiFillStar className="staricon" />;
+          }
+          return <AiFillStar className="scoreicon--fade" />;
+        })}
+      </div>
+      <span className="movietitle">{movie.original_title}</span>
+      {/* {movie.genres.map(
+        (item, index) => index < 2 && <p className="moviegenres">{item.name}</p>
+      )} */}
+      <span className="item__duration">{movie.runtime}min</span>
     </div>
-    <span className="movietitle">James Bond Collection</span>
-    <span className="moviegenred">Crime</span>
-    <span className="item__duration">2h 30min</span>
-  </div>
-  )
-
-  
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  );
+}

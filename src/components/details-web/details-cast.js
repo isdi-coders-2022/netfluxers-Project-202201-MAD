@@ -18,24 +18,21 @@ export function DetailsCast() {
         <div className="cast">
           <h3 className="cast__title">Cast</h3>
           <div className="cast__container">
-            <figure className="cast__actor">
-              {movie.map(
-                (item, index) =>
-                  index < 5 && (
-                    <>
-                      <img
-                        className="cast__img"
-                        src={`https://image.tmdb.org/t/p/w1280/${item.profile_path}`}
-                        alt=""
-                      />
-                      <figcaption className="cast__figc">
-                        {item.name}
-                      </figcaption>
-                    </>
-                  )
-              )}
-            </figure>
+            {movie.map(
+              (item, index) =>
+                index < 5 && (
+                  <figure className="cast__actor">
+                    <img
+                      className="cast__img"
+                      src={`https://image.tmdb.org/t/p/w1280/${item.profile_path}`}
+                      alt=""
+                    />
+                    <figcaption className="cast__figc">{item.name}</figcaption>
+                  </figure>
+                )
+            )}
           </div>
+          <div className="hr" />
         </div>
       ) : (
         <p>Loading</p>

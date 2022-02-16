@@ -54,12 +54,14 @@ export function DetailsFeature() {
                   className="score__icon score__icon--5"
                 />
               </div>
+              <div className="heart__container">
+                <AiFillHeart className="heart__icon" />
+              </div>
             </div>
           </div>
           <div className="movie-detail">
             <div className="movie-detail__info">
               <div className="genres">
-                <AiFillHeart className="heart__icon" />
                 <p className="genres__button genres__button--1">Action</p>
               </div>
               <p className="movie-detail__summary">{movie.overview}</p>

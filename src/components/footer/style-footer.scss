@@ -25,11 +25,15 @@ a {
     display: flex;
     justify-content: center;
     gap: 25px;
+    .footer-icon, .additional-class-name{
+      width: 2em;
+      height: 2em;
+    }
   }
   &__title {
     // width: 150px;
     // height: 18px;
-    padding-right: 50px;
+    
     padding-bottom: 30px;
     font-family: Actor;
     font-style: normal;

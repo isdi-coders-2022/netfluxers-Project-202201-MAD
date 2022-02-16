@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 import { getTrailer } from '../../services/apiTmdb';
 import './details-web.scss';
 
-export function DetailsTrailer() {
+export function DetailsTrailer({ id }) {
   const [movie, setMovie] = useState();
 
   useEffect(() => {
-    getTrailer(550).then((data) => {
+    getTrailer(id).then((data) => {
       setMovie(data.data);
     });
   }, []);

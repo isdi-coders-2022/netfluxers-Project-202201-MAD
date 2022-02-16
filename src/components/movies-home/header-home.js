@@ -6,7 +6,7 @@ export function HeaderHome() {
   const [movie, setMovie] = useState({});
 
   useEffect(() => {
-    getDetail(550).then((data) => {
+    getDetail(335983).then((data) => {
       setMovie(data.data);
     });
   }, []);

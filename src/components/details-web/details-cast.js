@@ -3,12 +3,12 @@ import { getCast } from '../../services/apiTmdb';
 import './details-web.scss';
 
 export function DetailsCast() {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState();
 
   useEffect(() => {
     getCast(550).then((data) => {
       setMovie(data.data.cast);
-      console.log(data.data.cast);
+      console.log(data.data);
     });
   }, []);
 
@@ -22,14 +22,18 @@ export function DetailsCast() {
               {movie.map(
                 (item, index) =>
                   index < 5 && (
-                    <img
-                      className="cast__img"
-                      src={`https://image.tmdb.org/t/p/w1280/${item.profile_path}`}
-                      alt=""
-                    />
+                    <>
+                      <img
+                        className="cast__img"
+                        src={`https://image.tmdb.org/t/p/w1280/${item.profile_path}`}
+                        alt=""
+                      />
+                      <figcaption className="cast__figc">
+                        {item.name}
+                      </figcaption>
+                    </>
                   )
               )}
-              <figcaption className="cast__figc">{movie.name}</figcaption>
             </figure>
           </div>
         </div>

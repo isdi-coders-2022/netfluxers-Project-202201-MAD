@@ -5,7 +5,7 @@
 }
 .container-fav-list {
   width: 100%;
-  background-color: #2b3543;
+  background-color: #0f1b2b;
   height: 100vh;
   color: white;
 }
@@ -29,9 +29,10 @@
 }
 .movie {
   display: flex;
+  max-width: 155px;
   flex-direction: column;
-  margin: 20px;
-  padding-left: 40px;
+  margin: 30px;
+
   padding-top: 20px;
 
   &__title {
@@ -43,11 +44,36 @@
   &__genred {
     top: 5px;
   }
+  &__poster-container {
+    position: relative;
+  }
 
   &__poster {
     width: 155px;
-    height: 175px;
-    left: 36px;
-    top: 110.17px;
+    border-radius: 10px;
   }
+}
+
+.delete__icon {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.movie-stars {
+  margin: auto;
+}
+.staricon path {
+  color: yellow;
+}
+.scoreicon--fade path {
+  color: rgba(255, 255, 0, 0.406);
+}
+.item__duration {
+  font-size: 12px;
+  margin: auto;
+}
+.movietitle {
+  font-size: 20px;
+  overflow: hidden;
+  margin: auto;
 }

@@ -62,7 +62,11 @@ export function DetailsFeature({ id }) {
           <div className="movie-detail">
             <div className="movie-detail__info">
               <div className="genres">
-                <p className="genres__button genres__button--1">Action</p>
+                {movie.genres.map((item) => (
+                  <p className="genres__button genres__button--1">
+                    {item.name}
+                  </p>
+                ))}
               </div>
               <p className="movie-detail__summary">{movie.overview}</p>
             </div>

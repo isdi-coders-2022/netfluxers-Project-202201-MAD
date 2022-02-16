@@ -6,12 +6,10 @@
   padding: 0;
 }
 
-.featured-movie__background-image {
-  opacity: 90%;
-}
 .featured-movie {
   color: white;
   background-color: #0f1b2b;
+  opacity: 90%;
 
   &__background-image {
     width: 100%;
@@ -78,9 +76,6 @@
     text-align: center;
     margin-top: 25px;
   }
-
-  &__text {
-  }
 }
 
 .video-trailer {
@@ -90,6 +85,9 @@
 
 figcaption {
   margin: 0px;
+}
+.genre__image:hover {
+  filter: brightness(0.4);
 }
 
 .genre {
@@ -105,6 +103,7 @@ figcaption {
     height: 300px;
     left: 26px;
     top: 440px;
+    border-radius: 10px;
   }
   &__figc {
     font-size: 10px;

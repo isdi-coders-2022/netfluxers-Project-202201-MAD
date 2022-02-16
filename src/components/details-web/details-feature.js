@@ -12,6 +12,7 @@ export function DetailsFeature({ id }) {
       setMovie(data.data);
     });
   }, []);
+  console.log(movie);
 
   return (
     <div>
@@ -33,26 +34,12 @@ export function DetailsFeature({ id }) {
             <div className="score">
               <p className="score__text">{movie.vote_average}</p>
               <div className="score__container">
-                <AiFillStar
-                  color="yellow"
-                  className="score__icon  score__icon--1"
-                />
-                <AiFillStar
-                  color="yellow"
-                  className="score__icon  score__icon--2"
-                />
-                <AiFillStar
-                  color="yellow"
-                  className="score__icon  score__icon--3"
-                />
-                <AiFillStar
-                  color="yellow"
-                  className="score__icon  score__icon--4"
-                />
-                <AiFillStar
-                  color="yellow"
-                  className="score__icon score__icon--5"
-                />
+                {[1, 2, 3, 4, 5].map((e, i) => {
+                  if (i + 1 < movie.vote_average / 2) {
+                    return <AiFillStar className="score__icon" />;
+                  }
+                  return <AiFillStar className="score__icon--fade" />;
+                })}
               </div>
               <div className="heart__container">
                 <AiFillHeart className="heart__icon" />
@@ -62,7 +49,11 @@ export function DetailsFeature({ id }) {
           <div className="movie-detail">
             <div className="movie-detail__info">
               <div className="genres">
-                <p className="genres__button genres__button--1">Action</p>
+                {movie.genres.map((item) => (
+                  <p className="genres__button genres__button--1">
+                    {item.name}
+                  </p>
+                ))}
               </div>
               <p className="movie-detail__summary">{movie.overview}</p>
             </div>

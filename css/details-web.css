@@ -129,4 +129,8 @@
   width: 100%;
 }
 
+.score__icon path {
+  color: yellow;
+}
+
 /*# sourceMappingURL=details-web.css.map */

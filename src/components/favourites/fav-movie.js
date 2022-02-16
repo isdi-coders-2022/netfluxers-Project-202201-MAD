@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './style-fav-list.scss';
 import { AiFillStar, AiFillHeart } from 'react-icons/ai';
 
@@ -5,12 +6,13 @@ export function FavoriteMovie({ movie }) {
   console.log(movie);
   return (
     <div className="movie">
-      <img
-        className="movie__poster"
-        src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
-        alt=""
-      />
-
+      <Link to={`/details/${movie.id}`}>
+        <img
+          className="movie__poster"
+          src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
+          alt=""
+        />
+      </Link>
       <div className="movie-stars">
         {[1, 2, 3, 4, 5].map((e, i) => {
           if (i + 1 < movie.vote_average / 2) {

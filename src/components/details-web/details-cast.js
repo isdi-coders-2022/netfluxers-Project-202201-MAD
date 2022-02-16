@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { getCast } from '../../services/apiTmdb';
 import './details-web.scss';
 
-export function DetailsCast() {
+export function DetailsCast({ id }) {
   const [movie, setMovie] = useState();
 
   useEffect(() => {
-    getCast(550).then((data) => {
+    getCast(id).then((data) => {
       setMovie(data.data.cast);
     });
   }, []);

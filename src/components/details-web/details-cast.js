@@ -8,7 +8,6 @@ export function DetailsCast() {
   useEffect(() => {
     getCast(550).then((data) => {
       setMovie(data.data.cast);
-      console.log(data.data);
     });
   }, []);
 

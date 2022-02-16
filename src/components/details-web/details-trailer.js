@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from 'react';
-import { getDetail } from '../../services/apiTmdb';
+import { getTrailer } from '../../services/apiTmdb';
 import './details-web.scss';
 
 export function DetailsTrailer() {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState();
 
   useEffect(() => {
-    getDetail(550).then((data) => {
+    getTrailer(550).then((data) => {
       setMovie(data.data);
     });
   }, []);
@@ -21,7 +21,7 @@ export function DetailsTrailer() {
             <iframe
               title="trailer"
               className="movie-trailer__vid"
-              src="https://www.youtube.com/embed/"
+              src={`https://www.youtube.com/embed/${movie.results[0].key}`}
               frameBorder="0"
             />
           </div>

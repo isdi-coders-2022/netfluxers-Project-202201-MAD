@@ -2,11 +2,18 @@
   "movie": [
     {
       "id": 1,
-      "title": "json-server",
-      "genrer": "crime",
-      "duration": "2.5h",
-      "poster": "https://image.tmdb.org/t/p/w1280/HORpg5CSkmeQlAolx3bKMrKgfi.jpg "
+      "original_title": "json-server",
+      "poster_path": "https://image.tmdb.org/t/p/w1280//vHla3Ej2m53rNmvmYkzvennLrKn.jpg",
+      "runtime": "2.5h",
+      "vote_average": "8"
+    },
+
+    {
+      "id": 2,
+      "original_title": "iVANSILLO",
+      "poster_path": "https://image.tmdb.org/t/p/w1280//vHla3Ej2m53rNmvmYkzvennLrKn.jpg",
+      "runtime": "2.5h",
+      "vote_average": "5"
     }
   ]
- 
 }

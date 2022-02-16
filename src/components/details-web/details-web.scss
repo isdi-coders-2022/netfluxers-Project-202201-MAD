@@ -65,19 +65,11 @@
   &__container {
     margin: 10px;
   }
-  &__icon {
-    color: yellow;
-  }
 }
 .genres {
   display: flex;
   margin-top: 20px;
-  &__icon {
-    padding: 15px 0 0 0;
-    margin: 0 20px 0 0;
-    color: red;
-    font-size: 30px;
-  }
+
   &__button {
     margin: 20px;
     border: 2px solid rgba(255, 255, 255, 0.5);
@@ -146,4 +138,10 @@
 .heart__icon {
   font-size: 30px;
   margin-top: 5px;
+}
+.score__icon path {
+  color: yellow;
+}
+.score__icon--fade path {
+  color: rgba(255, 255, 0, 0.256);
 }

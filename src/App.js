@@ -5,9 +5,8 @@ import { NavDesktop } from './components/nav/nav-desktop';
 import { ContainerHome } from './components/container-home/container-home';
 import { ContainerFav } from './components/container-fav/container-fav';
 import { ContainerDetails } from './components/container-details/container-details';
-import { DetailsCast } from './components/details-web/details-cast';
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <NavDesktop />
@@ -21,5 +20,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

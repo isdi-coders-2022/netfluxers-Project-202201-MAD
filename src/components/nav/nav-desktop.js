@@ -1,7 +1,12 @@
 import './style-nav-desktop.scss';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
+import LoginButton from './loginButton';
+import LogoutButton from './logoutButton';
+import Profile from './isAuthenticated';
 
 export function NavDesktop() {
+  const { isAuthenticated } = useAuth0();
   return (
     <header>
       <div className="container">
@@ -15,7 +20,14 @@ export function NavDesktop() {
               <Link to="/favorites-list">Favorites</Link>
             </li>
             <li className="nav-container-desktop__item">
-              <Link to="/*">Account</Link>
+              {isAuthenticated ? (
+                <>
+                  <Profile />
+                  <LogoutButton />
+                </>
+              ) : (
+                <LoginButton />
+              )}
             </li>
           </ul>
         </div>

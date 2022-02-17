@@ -17,7 +17,7 @@ export function GenredMovie({ genred }) {
     <>
       {movie.map(
         (item, index) =>
-          index < 7 && (
+          index < 6 && (
             <figure data-testid="figure" className="genre__figure">
               <Link to={`/details/${item.id}`}>
                 <img

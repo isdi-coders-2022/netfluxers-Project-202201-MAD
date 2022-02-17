@@ -4,10 +4,9 @@ import { Context } from '../contexto/context-provider';
 
 function Profile() {
   const { user, isAuthenticated, isLoading } = useAuth0();
-  const { saveUsers, updateCurrentUser } = useContext(Context);
+  const { updateCurrentUser } = useContext(Context);
 
   useEffect(() => {
-    saveUsers(user.nickname);
     updateCurrentUser(user.nickname);
   }, []);
 
@@ -15,15 +14,7 @@ function Profile() {
     return <div>Loading ...</div>;
   }
 
-  return (
-    isAuthenticated && (
-      <div>
-        {/* <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p> */}
-      </div>
-    )
-  );
+  return isAuthenticated && <div />;
 }
 
 export default Profile;

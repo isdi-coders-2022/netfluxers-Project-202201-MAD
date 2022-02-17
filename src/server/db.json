@@ -1,25 +1,25 @@
 {
   "movie": [
     {
-      "id": 438695,
-      "original_title": "Sing 2",
-      "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
-      "runtime": 110,
-      "vote_average": 8.2
+      "id": 459151,
+      "original_title": "The Boss Baby: Family Business",
+      "poster_path": "/kv2Qk9MKFFQo4WQPaYta599HkJP.jpg",
+      "runtime": 107,
+      "vote_average": 7.6
     },
     {
-      "id": 826749,
-      "original_title": "Fortress",
-      "poster_path": "/vQxtoPJVfpHgL7DCg9hQFZKDWJa.jpg",
-      "runtime": 100,
-      "vote_average": 6.2
+      "id": 524434,
+      "original_title": "Eternals",
+      "poster_path": "/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg",
+      "runtime": 156,
+      "vote_average": 7.2
     },
     {
-      "id": 644495,
-      "original_title": "House of Gucci",
-      "poster_path": "/vHla3Ej2m53rNmvmYkzvennLrKn.jpg",
-      "runtime": 158,
-      "vote_average": 6.7
+      "id": 512195,
+      "original_title": "Red Notice",
+      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
+      "runtime": 117,
+      "vote_average": 6.8
     },
     {
       "id": 585245,
@@ -29,11 +29,12 @@
       "vote_average": 7.3
     },
     {
-      "id": 633802,
-      "original_title": "Приворот. Чёрное венчание",
-      "poster_path": "/2AbGdSGlU6CpiV3lswHUgE5CdAA.jpg",
-      "runtime": 90,
-      "vote_average": 6.8
+      "id": 438695,
+      "original_title": "Sing 2",
+      "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
+      "runtime": 110,
+      "vote_average": 8.2,
+      "user_average": "0"
     }
   ]
 }

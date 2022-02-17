@@ -77,3 +77,22 @@
   overflow: hidden;
   margin: auto;
 }
+
+.update-score {
+  margin: 5px;
+  &__input {
+    width: 10em;
+    background-color: transparent;
+    border-radius: 5px;
+    border-style: solid;
+  }
+  &__button {
+    margin: 20px;
+    color: white;
+    background-color: #0f1b2b;
+    border-radius: 5px;
+    :hover {
+      background-color: red;
+    }
+  }
+}

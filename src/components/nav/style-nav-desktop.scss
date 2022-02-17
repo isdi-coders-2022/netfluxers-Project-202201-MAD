@@ -1,20 +1,23 @@
 a {
   text-decoration: none;
 }
+.app{
+  position: relative;
+}
 .container {
-  position: absolute;
+  
   z-index: 2;
 }
 .nav-container {
   display: flex;
-
+  color: red;
   justify-content: space-between;
-
+  
   .header-title {
     padding-left: 50px;
     width: 99px;
     height: 18px;
-
+    z-index: 6;
     padding-top: 25px;
     position: absolute;
     left: 50px;
@@ -31,8 +34,8 @@ a {
 
   .nav-container-desktop {
     position: absolute;
-    top: 0px;
-    left: 850px;
+    top: 10px;
+    left: 60%;
     z-index: 5;
     display: flex;
     flex-direction: row;

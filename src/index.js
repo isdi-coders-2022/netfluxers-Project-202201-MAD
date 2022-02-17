@@ -5,6 +5,7 @@ import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 import reportWebVitals from './reportWebVitals';
 import { App } from './App';
+import { ContextProvider } from './components/contexto/context-provider';
 
 ReactDOM.render(
   <Auth0Provider
@@ -13,9 +14,11 @@ ReactDOM.render(
     redirectUri={window.location.origin}
   >
     <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <ContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ContextProvider>
     </React.StrictMode>
   </Auth0Provider>,
   document.getElementById('root')

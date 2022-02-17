@@ -1,16 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { FavoriteMovie } from '../favourites/fav-movie';
 import '../favourites/style-fav-list.scss';
-import { GetAllLocalFav } from '../../services/apiLocal';
+
+import { Context } from '../contexto/context-provider';
 
 export function ContainerFav() {
-  const [movieFav, setMovieFav] = useState([]);
-
-  useEffect(() => {
-    GetAllLocalFav().then((result) => {
-      setMovieFav(result.data);
-    });
-  }, []);
+  const { moviesFav } = useContext(Context);
 
   return (
     <div className="container-fav-list">
@@ -18,7 +13,7 @@ export function ContainerFav() {
         <h2>Favorite Movies</h2>
       </div>
       <div className="container-fav-list-movie">
-        {movieFav.map((movie) => (
+        {moviesFav.map((movie) => (
           <FavoriteMovie movie={movie} />
         ))}
       </div>

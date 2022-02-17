@@ -7,7 +7,7 @@ import './details-web.scss';
 
 export function DetailsFeature({ id }) {
   const [movie, setMovie] = useState();
-  const { addMovie } = useContext(Context);
+  const { addMovie, currentUser } = useContext(Context);
 
   useEffect(() => {
     getDetail(id).then((data) => {
@@ -19,7 +19,6 @@ export function DetailsFeature({ id }) {
     addMovie(obj);
     // console.log(obj);
   }
-  console.log(movie);
 
   return (
     <div>
@@ -58,6 +57,7 @@ export function DetailsFeature({ id }) {
                       runtime: movie.runtime,
                       vote_average: movie.vote_average,
                       user_average: '0',
+                      nickname: currentUser,
                     });
                   }}
                   className="heart__icon"

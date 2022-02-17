@@ -2,19 +2,31 @@ import { createContext, useState, useEffect } from 'react';
 import * as api from '../../services/apiLocal';
 
 export const Context = createContext({
+  totalUser: [],
   moviesFav: [],
+  currentUser: '',
   addMovie: () => {},
   deleteMovie: () => {},
   updateMovie: () => {},
   getAllFav: () => {},
+  saveUsers: () => {},
+  updateCurrentUser: () => {},
 });
 
 export function ContextProvider({ children }) {
   const [moviesFav, setMoviesFav] = useState([]);
+  const [totalUser, setTotalUser] = useState([]);
+  const [currentUser, setCurrentUser] = useState('');
 
   useEffect(() => {
     api.getAllFav().then((resp) => setMoviesFav(resp.data));
   }, []);
+  function saveUsers(user) {
+    setTotalUser([...totalUser, user]);
+  }
+  function updateCurrentUser(user) {
+    setCurrentUser(user);
+  }
 
   const addMovie = (newMovie) => {
     api.SetFav(newMovie).then((resp) => {
@@ -47,6 +59,10 @@ export function ContextProvider({ children }) {
     addMovie,
     deleteMovie,
     updateMovie,
+    saveUsers,
+    totalUser,
+    currentUser,
+    updateCurrentUser,
   };
 
   return <Context.Provider value={elementContext}>{children}</Context.Provider>;

@@ -14,6 +14,6 @@ export function SetFav(movie) {
   return axios.post(API_LOCAL, movie);
 }
 
-export function getAllFav() {
+export function getAllFav(nickname) {
   return axios.get(API_LOCAL);
 }

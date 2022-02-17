@@ -20,7 +20,7 @@ export function DetailsCast({ id }) {
             {movie.map(
               (item, index) =>
                 index < 5 && (
-                  <figure className="cast__actor">
+                  <figure key={item.id} className="cast__actor">
                     <img
                       className="cast__img"
                       src={`https://image.tmdb.org/t/p/w1280/${item.profile_path}`}

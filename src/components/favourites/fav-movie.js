@@ -2,14 +2,16 @@ import { Link } from 'react-router-dom';
 import './style-fav-list.scss';
 import { AiFillStar } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
-import { RemoveFav } from '../../services/apiLocal';
+import { useContext } from 'react';
+import { Context } from '../contexto/context-provider';
 
 export function FavoriteMovie({ movie }) {
-  console.log(movie);
+  const { deleteMovie } = useContext(Context);
 
-  function handleClick(id) {
-    RemoveFav(id);
-    console.log(id);
+  function handleClick(moviee) {
+    console.log(moviee);
+    console.log(moviee.id);
+    deleteMovie(moviee);
   }
   return (
     <div className="movie">
@@ -24,7 +26,7 @@ export function FavoriteMovie({ movie }) {
         <TiDeleteOutline
           className="delete__icon"
           onClick={() => {
-            handleClick(movie.id);
+            handleClick(movie);
           }}
         />
       </div>

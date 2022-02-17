@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { AiFillStar, AiFillHeart } from 'react-icons/ai';
 import { getDetail } from '../../services/apiTmdb';
-import { SetFav } from '../../services/apiLocal';
+import { Context } from '../contexto/context-provider';
 import './details-web.scss';
 
 export function DetailsFeature({ id }) {
   const [movie, setMovie] = useState();
+  const { addMovie } = useContext(Context);
 
   useEffect(() => {
     getDetail(id).then((data) => {
@@ -15,7 +16,7 @@ export function DetailsFeature({ id }) {
   }, []);
 
   function handleClick(obj) {
-    SetFav(obj);
+    addMovie(obj);
     // console.log(obj);
   }
   console.log(movie);

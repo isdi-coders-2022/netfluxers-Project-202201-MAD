@@ -8,25 +8,11 @@
       "vote_average": 7.6
     },
     {
-      "id": 524434,
-      "original_title": "Eternals",
-      "poster_path": "/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg",
-      "runtime": 156,
-      "vote_average": 7.2
-    },
-    {
       "id": 512195,
       "original_title": "Red Notice",
       "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
       "runtime": 117,
       "vote_average": 6.8
-    },
-    {
-      "id": 585245,
-      "original_title": "Clifford the Big Red Dog",
-      "poster_path": "/oifhfVhUcuDjE61V5bS5dfShQrm.jpg",
-      "runtime": 97,
-      "vote_average": 7.3
     }
   ]
 }

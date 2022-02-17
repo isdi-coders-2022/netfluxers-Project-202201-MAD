@@ -58,6 +58,14 @@
   position: absolute;
   left: 5px;
   top: 5px;
+  
+}
+.delete__icon path{
+  color: rgb(192, 233, 97);
+  cursor: pointer;
+}
+.delete__icon path:hover{
+  color: red;
 }
 .movie-stars {
   margin: auto;

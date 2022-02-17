@@ -15,8 +15,6 @@ export function FavoriteMovie({ movie }) {
     deleteMovie(moviee);
   }
   function updateClick(moviee, newscore) {
-    console.log(newscore);
-    console.log(moviee);
     updateMovie(moviee, newscore);
   }
   return (

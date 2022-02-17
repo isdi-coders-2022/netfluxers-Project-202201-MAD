@@ -1,18 +1,17 @@
 a {
   text-decoration: none;
 }
-.app{
+.app {
   position: relative;
 }
 .container {
-  
   z-index: 2;
 }
 .nav-container {
   display: flex;
   color: red;
   justify-content: space-between;
-  
+
   .header-title {
     padding-left: 50px;
     width: 99px;
@@ -43,7 +42,7 @@ a {
     list-style: none;
     padding-right: 50px;
     gap: 40px;
-    &__item:last-child{
+    &__item:last-child {
       padding-top: 15px;
     }
     &__item {
@@ -55,13 +54,13 @@ a {
       font-size: 18px;
       line-height: 11px;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      button{
+      button {
         padding: 5px 10px;
         border-radius: 10px;
         border: none;
         background-color: rgb(37, 224, 31);
       }
-      button:hover{
+      button:hover {
         background-color: red;
       }
       a {
@@ -73,11 +72,12 @@ a {
     }
   }
 }
-.dataUser{
-  img[alt]{
+.dataUser {
+  img[alt] {
     display: none;
   }
-  h2,p{
+  h2,
+  p {
     display: none;
   }
 }

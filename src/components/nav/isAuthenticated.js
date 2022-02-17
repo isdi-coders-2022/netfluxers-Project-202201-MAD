@@ -9,7 +9,7 @@ function Profile() {
 
   return (
     isAuthenticated && (
-      <div className='dataUser'>
+      <div>
         <img src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
         <p>{user.email}</p>

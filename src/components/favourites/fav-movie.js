@@ -2,16 +2,22 @@ import { Link } from 'react-router-dom';
 import './style-fav-list.scss';
 import { AiFillStar } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Context } from '../contexto/context-provider';
 
 export function FavoriteMovie({ movie }) {
   const { deleteMovie } = useContext(Context);
+  const { updateMovie } = useContext(Context);
+
+  const [updateInputText, setUpdateInputText] = useState('');
 
   function handleClick(moviee) {
-    console.log(moviee);
-    console.log(moviee.id);
     deleteMovie(moviee);
+  }
+  function updateClick(moviee, newscore) {
+    console.log(newscore);
+    console.log(moviee);
+    updateMovie(moviee, newscore);
   }
   return (
     <div className="movie">
@@ -41,7 +47,7 @@ export function FavoriteMovie({ movie }) {
       </div> */}
       <div className="movie-stars">
         {[1, 2, 3, 4, 5].map((e, i) => {
-          if (i + 1 < movie.user_avege / 2) {
+          if (i < movie.user_average) {
             return <AiFillStar className="staricon" />;
           }
           return <AiFillStar className="scoreicon--fade" />;
@@ -53,12 +59,20 @@ export function FavoriteMovie({ movie }) {
         (item, index) => index < 2 && <p className="moviegenres">{item.name}</p>
       )} */}
       <span className="item__duration">{movie.runtime}min</span>
-      <form className="update-score">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          updateClick(movie, +updateInputText);
+        }}
+        className="update-score"
+      >
         <input
           className="update-score__input"
           type="text"
           id="user_avege"
           name="user_avege"
+          value={updateInputText}
+          onChange={(e) => setUpdateInputText(e.target.value)}
         />
         <button className="update-score__button" type="submit">
           Udpate

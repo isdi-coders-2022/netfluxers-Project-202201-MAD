@@ -1,3 +1,31 @@
 {
-  "movie": []
+  "movie": [
+    {
+      "id": 425909,
+      "original_title": "Ghostbusters: Afterlife",
+      "poster_path": "/sg4xJaufDiQl7caFEskBtQXfD4x.jpg",
+      "runtime": 124,
+      "vote_average": 7.7,
+      "user_average": "0",
+      "nickname": ""
+    },
+    {
+      "id": 585245,
+      "original_title": "Clifford the Big Red Dog",
+      "poster_path": "/oifhfVhUcuDjE61V5bS5dfShQrm.jpg",
+      "runtime": 97,
+      "vote_average": 7.3,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr"
+    },
+    {
+      "id": 644495,
+      "original_title": "House of Gucci",
+      "poster_path": "/vHla3Ej2m53rNmvmYkzvennLrKn.jpg",
+      "runtime": 158,
+      "vote_average": 6.7,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr"
+    }
+  ]
 }

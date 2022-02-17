@@ -97,6 +97,11 @@
     font-weight: bold;
     font-size: 30px;
   }
+  &__figc {
+    font-size: 18px;
+    width: 100px;
+    margin: auto;
+  }
   &__img {
     width: 75px;
     border-radius: 50%;
@@ -139,6 +144,9 @@
 .heart__icon {
   font-size: 30px;
   margin-top: 5px;
+  :hover {
+    color: rgb(191, 121, 121);
+  }
 }
 .score__icon path {
   color: yellow;

@@ -53,9 +53,7 @@ export function FavoriteMovie({ movie }) {
       </div>
 
       <span className="movietitle">{movie.original_title}</span>
-      {/* {movie.genres.map(
-        (item, index) => index < 2 && <p className="moviegenres">{item.name}</p>
-      )} */}
+
       <span className="item__duration">{movie.runtime}min</span>
       <form
         onSubmit={(e) => {
@@ -66,7 +64,9 @@ export function FavoriteMovie({ movie }) {
       >
         <input
           className="update-score__input"
-          type="text"
+          type="number"
+          min="0"
+          max="5"
           id="user_avege"
           name="user_avege"
           value={updateInputText}

@@ -1,16 +1,22 @@
+import { Link } from 'react-router-dom';
 import './style-fav-list.scss';
-import { AiFillStar, AiFillHeart } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai';
+import { TiDeleteOutline } from 'react-icons/ti';
 
 export function FavoriteMovie({ movie }) {
   console.log(movie);
   return (
     <div className="movie">
-      <img
-        className="movie__poster"
-        src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
-        alt=""
-      />
-
+      <Link to={`/details/${movie.id}`}>
+        <div className="movie__poster-container">
+          <img
+            className="movie__poster"
+            src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
+            alt=""
+          />
+          <TiDeleteOutline className="delete__icon" />
+        </div>
+      </Link>
       <div className="movie-stars">
         {[1, 2, 3, 4, 5].map((e, i) => {
           if (i + 1 < movie.vote_average / 2) {

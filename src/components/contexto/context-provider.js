@@ -32,8 +32,9 @@ export function ContextProvider({ children }) {
 
   const updateMovie = (movie, newscore) => {
     api.updateFav(movie).then((resp) => {
+      console.log(resp);
       setMoviesFav(
-        movie.map((item) =>
+        moviesFav.map((item) =>
           item.id === resp.data.id ? { ...item, user_average: newscore } : item
         )
       );

@@ -1,18 +1,12 @@
 {
   "movie": [
     {
-      "id": 459151,
-      "original_title": "The Boss Baby: Family Business",
-      "poster_path": "/kv2Qk9MKFFQo4WQPaYta599HkJP.jpg",
-      "runtime": 107,
-      "vote_average": 7.6
-    },
-    {
-      "id": 524434,
-      "original_title": "Eternals",
-      "poster_path": "/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg",
-      "runtime": 156,
-      "vote_average": 7.2
+      "id": 568124,
+      "original_title": "Encanto",
+      "poster_path": "/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
+      "runtime": 102,
+      "vote_average": 7.8,
+      "user_average": 2
     }
   ]
 }

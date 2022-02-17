@@ -2,15 +2,22 @@ import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { Auth0Provider } from '@auth0/auth0-react';
 import reportWebVitals from './reportWebVitals';
+import { App } from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <Auth0Provider
+    domain="dev-2o0hs-n4.us.auth0.com"
+    clientId="dXJFsAhjpTOe1N5rwsof6tgyBGgXVEcu"
+    redirectUri={window.location.origin}
+  >
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  </Auth0Provider>,
   document.getElementById('root')
 );
 

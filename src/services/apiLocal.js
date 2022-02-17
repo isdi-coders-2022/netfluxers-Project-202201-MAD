@@ -1,6 +1,6 @@
 import axios, { Axios } from 'axios';
 
-const API_LOCAL = 'http://localhost:3000/movie';
+const API_LOCAL = 'http://localhost:4500/movie';
 
 export function RemoveFav(id) {
   return axios.remove(API_LOCAL, id);

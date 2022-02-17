@@ -1,3 +1,4 @@
+import { useAuth0 } from '@auth0/auth0-react';
 import { createContext, useState, useEffect } from 'react';
 import * as api from '../../services/apiLocal';
 
@@ -14,13 +15,16 @@ export const Context = createContext({
 export function ContextProvider({ children }) {
   const [moviesFav, setMoviesFav] = useState([]);
   const [currentUser, setCurrentUser] = useState('');
+  const { user, isAuthenticated } = useAuth0();
 
   useEffect(() => {
-    api.getAllFav().then((resp) => setMoviesFav(resp.data));
-  }, []);
+    if (isAuthenticated === true) {
+      api.getAllFav(currentUser).then((resp) => setMoviesFav(resp.data));
+    }
+  }, [currentUser, isAuthenticated]);
 
-  function updateCurrentUser(user) {
-    setCurrentUser(user);
+  function updateCurrentUser(user1) {
+    setCurrentUser(user1);
   }
 
   const addMovie = (newMovie) => {

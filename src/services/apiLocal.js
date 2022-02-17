@@ -1,6 +1,7 @@
 import axios, { Axios } from 'axios';
 
 const API_LOCAL = 'http://localhost:4500/movie/';
+const API_USERS = 'http://localhost:4500/movie/?nickname=';
 
 export function removeFav(id) {
   return axios.delete(API_LOCAL + id);
@@ -15,5 +16,5 @@ export function SetFav(movie) {
 }
 
 export function getAllFav(nickname) {
-  return axios.get(API_LOCAL);
+  return axios.get(API_USERS + nickname);
 }

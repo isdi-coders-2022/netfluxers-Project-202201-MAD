@@ -8,19 +8,19 @@ import { App } from './App';
 import { ContextProvider } from './components/contexto/context-provider';
 
 ReactDOM.render(
-  <Auth0Provider
-    domain="dev-2o0hs-n4.us.auth0.com"
-    clientId="dXJFsAhjpTOe1N5rwsof6tgyBGgXVEcu"
-    redirectUri={window.location.origin}
-  >
-    <React.StrictMode>
+  <React.StrictMode>
+    <Auth0Provider
+      domain="dev-2o0hs-n4.us.auth0.com"
+      clientId="dXJFsAhjpTOe1N5rwsof6tgyBGgXVEcu"
+      redirectUri={window.location.origin}
+    >
       <ContextProvider>
         <BrowserRouter>
           <App />
         </BrowserRouter>
       </ContextProvider>
-    </React.StrictMode>
-  </Auth0Provider>,
+    </Auth0Provider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

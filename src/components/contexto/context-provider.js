@@ -30,8 +30,14 @@ export function ContextProvider({ children }) {
     });
   };
 
-  const updateMovie = (movie) => {
-    api.updateFav(movie).then((resp) => {});
+  const updateMovie = (movie, newscore) => {
+    api.updateFav(movie).then((resp) => {
+      setMoviesFav(
+        movie.map((item) =>
+          item.id === resp.data.id ? { ...item, user_average: newscore } : item
+        )
+      );
+    });
   };
 
   // eslint-disable-next-line react/jsx-no-constructed-context-values

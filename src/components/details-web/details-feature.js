@@ -57,6 +57,7 @@ export function DetailsFeature({ id }) {
                       poster_path: movie.poster_path,
                       runtime: movie.runtime,
                       vote_average: movie.vote_average,
+                      user_average: '0',
                     });
                   }}
                   className="heart__icon"

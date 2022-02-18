@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import { getDetail } from '../../services/apiTmdb';
-import { Context } from '../contexto/context-provider';
+
 import './style-home-header.scss';
 
 export function HeaderHome() {

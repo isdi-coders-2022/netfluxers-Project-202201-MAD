@@ -1,4 +1,4 @@
-import axios, { Axios } from 'axios';
+import axios from 'axios';
 
 const API_LOCAL = 'http://localhost:4500/movie/';
 const API_USERS = 'http://localhost:4500/movie/?nickname=';

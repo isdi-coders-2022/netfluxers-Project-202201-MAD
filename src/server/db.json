@@ -10,24 +10,6 @@
       "nickname": "passionforcbd"
     },
     {
-      "id": 516329,
-      "original_title": "Antlers",
-      "poster_path": "/cMch3tiexw3FdOEeZxMWVel61Xg.jpg",
-      "runtime": 99,
-      "vote_average": 6.4,
-      "user_average": "0",
-      "nickname": "jesusrodriguezgonzalezgr"
-    },
-    {
-      "id": 826749,
-      "original_title": "Fortress",
-      "poster_path": "/vQxtoPJVfpHgL7DCg9hQFZKDWJa.jpg",
-      "runtime": 100,
-      "vote_average": 6.2,
-      "user_average": 2,
-      "nickname": "jesusrodriguezgonzalezgr"
-    },
-    {
       "id": 633802,
       "original_title": "Приворот. Чёрное венчание",
       "poster_path": "/2AbGdSGlU6CpiV3lswHUgE5CdAA.jpg",
@@ -44,6 +26,87 @@
       "vote_average": 5.8,
       "user_average": "0",
       "nickname": ""
+    },
+    {
+      "id": 425909,
+      "original_title": "Ghostbusters: Afterlife",
+      "poster_path": "/sg4xJaufDiQl7caFEskBtQXfD4x.jpg",
+      "runtime": 124,
+      "vote_average": 7.7,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr"
+    },
+    {
+      "id": 763152,
+      "original_title": "Donde caben dos",
+      "poster_path": "/uShw8wJ7K4ySrPtUWjGe8wwJ5fj.jpg",
+      "runtime": 112,
+      "vote_average": 6.7,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr"
+    },
+    {
+      "id": 829358,
+      "original_title": "Queen of Spades",
+      "poster_path": "/4IKBzVBPLXu9p5cfEfdJjHdlafV.jpg",
+      "runtime": 91,
+      "vote_average": 6.1,
+      "user_average": 2,
+      "nickname": "jesusrodriguezgonzalezgr"
+    },
+    {
+      "id": 568124,
+      "original_title": "Encanto",
+      "poster_path": "/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
+      "runtime": 102,
+      "vote_average": 7.8,
+      "user_average": 4,
+      "nickname": "jesusrodriguezgonzalezgr"
+    },
+    {
+      "id": 754934,
+      "original_title": "Son",
+      "poster_path": "/4fl6EdtMp6p0RKJgESdFti1J3dC.jpg",
+      "runtime": 98,
+      "vote_average": 5.9,
+      "user_average": 5,
+      "nickname": "jesusrodriguezgonzalezgr"
+    },
+    {
+      "id": 811592,
+      "original_title": "One Shot",
+      "poster_path": "/3OXiTjU30gWtqxmx4BU9RVp2OTv.jpg",
+      "runtime": 97,
+      "vote_average": 6.7,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr"
+    },
+    {
+      "id": 385128,
+      "original_title": "F9",
+      "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
+      "runtime": 143,
+      "vote_average": 7.3,
+      "user_average": "0",
+      "nickname": "jezus9393"
+    },
+    {
+      "id": 826749,
+      "original_title": "Fortress",
+      "poster_path": "/vQxtoPJVfpHgL7DCg9hQFZKDWJa.jpg",
+      "runtime": 100,
+      "vote_average": 6.2,
+      "user_average": "0",
+      "nickname": "jezus9393"
+    },
+    {
+      "id": 744275,
+      "original_title": "After We Fell",
+      "poster_path": "/dU4HfnTEJDf9KvxGS9hgO7BVeju.jpg",
+      "runtime": 99,
+      "vote_average": 7.2,
+      "user_average": "0",
+      "nickname": "jezus9393"
     }
   ]
 }

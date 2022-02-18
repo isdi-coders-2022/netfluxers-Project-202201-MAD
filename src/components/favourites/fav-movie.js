@@ -20,7 +20,7 @@ export function FavoriteMovie({ movie }) {
   return (
     <div className="movie">
       <div className="movie__poster-container">
-        <Link to={`/details/${movie.id}`}>
+        <Link to={`/details/${movie.idmovie}`}>
           <img
             className="movie__poster"
             src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}

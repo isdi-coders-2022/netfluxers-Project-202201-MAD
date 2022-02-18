@@ -17,7 +17,6 @@ export function DetailsFeature({ id }) {
 
   function handleClick(obj) {
     addMovie(obj);
-    // console.log(obj);
   }
 
   return (

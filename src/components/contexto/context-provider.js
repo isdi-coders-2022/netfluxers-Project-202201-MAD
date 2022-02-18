@@ -15,7 +15,7 @@ export const Context = createContext({
 export function ContextProvider({ children }) {
   const [moviesFav, setMoviesFav] = useState([]);
   const [currentUser, setCurrentUser] = useState('');
-  const { user, isAuthenticated } = useAuth0();
+  const { isAuthenticated } = useAuth0();
 
   useEffect(() => {
     if (isAuthenticated === true) {
@@ -35,9 +35,7 @@ export function ContextProvider({ children }) {
 
   const deleteMovie = (movie) => {
     api.removeFav(movie.id).then((resp) => {
-      //   if (resp.status === 200) {
       setMoviesFav(moviesFav.filter((item) => item.id !== movie.id));
-      //   }
     });
   };
 

@@ -35,14 +35,6 @@ export function FavoriteMovie({ movie }) {
         />
       </div>
 
-      {/* <div className="movie-stars">
-        {[1, 2, 3, 4, 5].map((e, i) => {
-          if (i + 1 < movie.vote_average / 2) {
-            return <AiFillStar className="staricon" />;
-          }
-          return <AiFillStar className="scoreicon--fade" />;
-        })}
-      </div> */}
       <div className="movie-stars">
         {[1, 2, 3, 4, 5].map((e, i) => {
           if (i < movie.user_average) {

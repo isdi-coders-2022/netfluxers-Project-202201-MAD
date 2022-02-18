@@ -50,7 +50,7 @@ export function DetailsFeature({ id }) {
                 <AiFillHeart
                   onClick={() => {
                     handleClick({
-                      id: movie.id,
+                      idmovie: movie.id,
                       original_title: movie.original_title,
                       poster_path: movie.poster_path,
                       runtime: movie.runtime,

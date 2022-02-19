@@ -9,7 +9,7 @@ export function netfluxReducer(state, action) {
     case moviesActionsList.update:
       return state.map((item) =>
         item.id === action.movie.id
-          ? { ...item, user_average: action.newScore }
+          ? { ...item, user_average: action.movie.newScore }
           : item
       );
     case moviesActionsList.remove:

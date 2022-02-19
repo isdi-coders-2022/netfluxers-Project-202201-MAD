@@ -9,16 +9,19 @@ export function GenredMovie({ genred }) {
   useEffect(() => {
     getMovieGenres(genred).then((data) => {
       setMovie(data.data.results);
-      console.log(data.data.results);
     });
-  }, []);
+  }, [genred]);
 
   return (
     <>
       {movie.map(
         (item, index) =>
           index < 6 && (
-            <figure data-testid="figure" className="genre__figure">
+            <figure
+              key={item.id}
+              data-testid="figure"
+              className="genre__figure"
+            >
               <Link to={`/details/${item.id}`}>
                 <img
                   data-testid="poster"

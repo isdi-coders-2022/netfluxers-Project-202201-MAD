@@ -65,7 +65,7 @@ export function FavoriteMovie({ movie }) {
           onChange={(e) => setUpdateInputText(e.target.value)}
         />
         <button className="update-score__button" type="submit">
-          Udpate
+          Update
         </button>
       </form>
     </div>

@@ -1,11 +1,5 @@
 import { prettyDOM, render, screen } from '@testing-library/react';
-import {
-  BrowserRouter,
-  MemoryRouter,
-  Route,
-  Router,
-  Routes,
-} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { getMovieGenres } from '../../services/apiTmdb';
 import { GenredMovie } from './genres-home';
 
@@ -33,23 +27,6 @@ const movie = {
 };
 
 jest.mock('../../services/apiTmdb');
-
-// describe('first getMovieGenres from API', () => {
-//   beforeEach(() => {
-//     getMovieGenres.mockResolvedValue(movie);
-//   });
-//   test('should show ContainerDetails', () => {
-//     const { container } = render(
-//       <MemoryRouter initialEntries={['/details/555']}>
-//         <Routes location={{ pathname: '/details/555' }}>
-//           <Route path="/details/:id" element={<GenredMovie />} />
-//         </Routes>
-//       </MemoryRouter>
-//     );
-//     console.log(prettyDOM(container));
-//     expect(screen.getByText(/The Amazing Spider/i)).toBeDefined();
-//   });
-// });
 
 describe('first getMovieGenres from API', () => {
   beforeEach(() => {

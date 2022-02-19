@@ -6,6 +6,7 @@ import { Context } from '../contexto/context-provider';
 
 export function ContainerFav() {
   const { moviesFav } = useContext(Context);
+  console.log(moviesFav);
 
   return (
     <div className="container-fav-list">

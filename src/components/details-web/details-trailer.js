@@ -10,7 +10,7 @@ export function DetailsTrailer({ id }) {
     getTrailer(id).then((data) => {
       setMovie(data.data);
     });
-  }, []);
+  }, [id]);
 
   return (
     <div>

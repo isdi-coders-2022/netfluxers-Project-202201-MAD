@@ -28,17 +28,24 @@ const movie = {
 
 jest.mock('../../services/apiTmdb');
 
-describe('first getMovieGenres from API', () => {
+const component = (
+  <BrowserRouter>
+    <FavoriteMovie movie={movie} />
+  </BrowserRouter>
+);
+
+describe('Testing charge FavoriteMovie component', () => {
   beforeEach(() => {
     getMovieGenres.mockResolvedValue(movie);
   });
-  test('should show Genres-', () => {
-    render(
-      <BrowserRouter>
-        <FavoriteMovie movie={movie} />
-      </BrowserRouter>
-    );
+  test('movie update button', () => {
+    render(component);
 
-    expect(screen.getByText(/Udpate/i)).toBeInTheDocument();
+    expect(screen.getByText(/Update/i)).toBeInTheDocument();
+  });
+  test('movie runtime-', () => {
+    render(component);
+
+    expect(screen.getByText(/min/i)).toBeInTheDocument();
   });
 });

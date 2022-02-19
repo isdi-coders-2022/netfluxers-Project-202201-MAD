@@ -13,7 +13,7 @@ export function DetailsFeature({ id }) {
     getDetail(id).then((data) => {
       setMovie(data.data);
     });
-  }, []);
+  }, [id]);
 
   function handleClick(obj) {
     addMovie(obj);
@@ -40,7 +40,7 @@ export function DetailsFeature({ id }) {
               <p className="score__text">{movie.vote_average}</p>
               <div className="score__container">
                 {[1, 2, 3, 4, 5].map((e, i) => {
-                  if (i + 1 < movie.vote_average / 2) {pu
+                  if (i + 1 < movie.vote_average / 2) {
                     return <AiFillStar className="score__icon" />;
                   }
                   return <AiFillStar className="score__icon--fade" />;

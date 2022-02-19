@@ -9,7 +9,7 @@ export function DetailsCast({ id }) {
     getCast(id).then((data) => {
       setMovie(data.data.cast);
     });
-  }, []);
+  }, [id]);
 
   return (
     <div>

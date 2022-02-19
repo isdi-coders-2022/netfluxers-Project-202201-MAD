@@ -99,6 +99,16 @@
       "user_average": 5,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 11
+    },
+    {
+      "idmovie": 438695,
+      "original_title": "Sing 2",
+      "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
+      "runtime": 110,
+      "vote_average": 8.2,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr",
+      "id": 12
     }
   ]
 }

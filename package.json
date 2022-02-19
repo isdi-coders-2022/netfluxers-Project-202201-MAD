@@ -78,6 +78,12 @@
         ]
       }
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!/node_modules/",
+      "!**/index.js",
+      "!**/reportWebVitals.js"
+    ]
   }
-  
 }

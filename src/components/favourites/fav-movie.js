@@ -7,7 +7,6 @@ import { Context } from '../contexto/context-provider';
 
 export function FavoriteMovie({ movie }) {
   const { deleteMovie, updateMovie, userState } = useContext(Context);
-  console.log(userState);
 
   const [updateInputText, setUpdateInputText] = useState('');
 

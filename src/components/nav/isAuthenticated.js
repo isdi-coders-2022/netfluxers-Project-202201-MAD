@@ -4,7 +4,6 @@ import { Context } from '../contexto/context-provider';
 
 function Profile() {
   const { user, isAuthenticated, isLoading } = useAuth0();
-  console.log(user);
   const { updateCurrentUser } = useContext(Context);
 
   useEffect(() => {

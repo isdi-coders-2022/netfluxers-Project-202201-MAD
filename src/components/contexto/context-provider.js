@@ -5,28 +5,26 @@ import { netfluxReducer } from '../reducers/reducer';
 import * as action from '../reducers/action-creators';
 
 export const Context = createContext({
-  favoritesMovies: [],
-  // moviesFav: [],
+  favoritesMovies: [{}],
   currentUser: '',
-  // addMovie: () => {},
-  // deleteMovie: () => {},
-  // updateMovie: () => {},
+  addMovie: () => {},
+  deleteMovie: () => {},
+  updateMovie: () => {},
   getAllFav: () => {},
   updateCurrentUser: () => {},
 });
 
 export function ContextProvider({ children }) {
-  const favoritesMovies = [];
-  // const [moviesFav, setMoviesFav] = useState([]);
-  const [state, dispatch] = useReducer(netfluxReducer, favoritesMovies);
+  const { user, isAuthenticated } = useAuth0();
+
+  const [favoritesMovies, dispatch] = useReducer(netfluxReducer, [{}]);
 
   const [currentUser, setCurrentUser] = useState('');
-  const { isAuthenticated } = useAuth0();
 
   useEffect(() => {
     if (isAuthenticated === true) {
       api
-        .getAllFav(currentUser)
+        .getAllFav(user.nickname)
         .then((resp) => dispatch(action.loadFavMovies(resp.data)));
     }
   }, [currentUser, isAuthenticated]);
@@ -35,39 +33,32 @@ export function ContextProvider({ children }) {
     setCurrentUser(user1);
   }
 
-  // const addMovie = (newMovie) => {
-  //   api.SetFav(newMovie).then((resp) => {
-  //     setMoviesFav([...moviesFav, resp.data]);
-  //   });
-  // };
+  const addMovie = (newMovie) => {
+    api.SetFav(newMovie).then((resp) => {
+      dispatch(action.addMovies(resp.data));
+    });
+  };
 
-  // const deleteMovie = (movie) => {
-  //   api.removeFav(movie.id).then((resp) => {
-  //     setMoviesFav(moviesFav.filter((item) => item.id !== movie.id));
-  //   });
-  // };
+  const deleteMovie = (movie) => {
+    api.removeFav(movie.id).then((resp) => {
+      dispatch(action.removeMovies(movie));
+    });
+  };
 
-  // const updateMovie = (movie, newscore) => {
-  //   api.updateFav(movie).then((resp) => {
-  //     console.log(resp);
-  //     setMoviesFav(
-  //       moviesFav.map((item) =>
-  //         item.id === resp.data.id ? { ...item, user_average: newscore } : item
-  //       )
-  //     );
-  //   });
-  // };
+  const updateMovie = (movie, newscore) => {
+    api.updateFav(movie).then((resp) => {
+      dispatch(action.updateMovies(resp.data, newscore));
+    });
+  };
 
   // eslint-disable-next-line react/jsx-no-constructed-context-values
   const elementContext = {
-    // moviesFav,
-    // addMovie,
-    // deleteMovie,
-    // updateMovie,
+    addMovie,
+    deleteMovie,
+    updateMovie,
     currentUser,
     updateCurrentUser,
     favoritesMovies,
-    state,
   };
 
   return <Context.Provider value={elementContext}>{children}</Context.Provider>;

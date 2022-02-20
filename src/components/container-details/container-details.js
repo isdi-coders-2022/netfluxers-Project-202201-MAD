@@ -5,7 +5,6 @@ import { DetailsTrailer } from '../details-web/details-trailer';
 
 export function ContainerDetails() {
   const { id } = useParams();
-  console.log(id);
   return (
     <>
       <DetailsFeature id={id} />

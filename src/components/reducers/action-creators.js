@@ -14,7 +14,8 @@ export const removeMovies = (movie) => ({
   type: moviesActionsList.remove,
   movie,
 });
-export const updateMovies = (movie) => ({
+export const updateMovies = (movie, newscore) => ({
   type: moviesActionsList.update,
   movie,
+  newscore,
 });

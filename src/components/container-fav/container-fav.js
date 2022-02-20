@@ -14,7 +14,7 @@ export function ContainerFav() {
       </div>
       <div className="container-fav-list-movie">
         {favoritesMovies.map((movie) => (
-          <FavoriteMovie movie={movie} />
+          <FavoriteMovie key={movie.id} movie={movie} />
         ))}
       </div>
     </div>

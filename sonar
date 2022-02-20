@@ -1,2 +1,0 @@
-
-sonar-scanner.bat -D"sonar.projectKey=netfluxers-Project-202201-MAD" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=86395db72fe9d8080055d54b78fb5582f3cf3403"

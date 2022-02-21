@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { getCast } from '../../services/apiTmdb';
+import { getTrailer } from '../../services/apiTmdb';
 import { DetailsTrailer } from './details-trailer';
 
 const trailer = {
@@ -15,17 +15,17 @@ const trailer = {
 
 jest.mock('../../services/apiTmdb.js');
 
-describe('first getMovieGenres from API', () => {
+describe('first getTrailer from API', () => {
   beforeEach(() => {
-    getCast.mockResolvedValue(trailer);
+    getTrailer.mockResolvedValue(trailer);
   });
-  test('should show Genres-', () => {
+  test('should show Trailer text-', async () => {
     render(
       <BrowserRouter>
         <DetailsTrailer id="819" />
       </BrowserRouter>
     );
 
-    expect(screen.getByText(/loading/i)).toBeInTheDocument();
+    expect(await screen.findByText(/Trailer/i)).toBeInTheDocument();
   });
 });

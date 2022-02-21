@@ -1,22 +1,21 @@
 import { moviesActionsList } from './action-list';
 
-export const getAllMovies = (movies) => ({
-  type: moviesActionsList.getAll,
-  movies,
+export const loadFavMovies = (movieFavList) => ({
+  type: moviesActionsList.loadFavorites,
+  movieFavList,
 });
 
-export const addMovie = (movie) => ({
+export const addMovies = (movie) => ({
   type: moviesActionsList.add,
   movie,
 });
 
-export const updateMovie = (movie, newScore) => ({
-  type: moviesActionsList.update,
-  movie,
-  newScore,
-});
-
-export const removeMovie = (movie) => ({
+export const removeMovies = (movie) => ({
   type: moviesActionsList.remove,
   movie,
+});
+export const updateMovies = (movie, newscore) => ({
+  type: moviesActionsList.update,
+  movie,
+  newscore,
 });

@@ -1,6 +1,6 @@
 export const moviesActionsList = {
-  getAll: '@movie/getAll',
-  add: '@movie/add',
-  update: '@movie/update',
-  remove: '@movie/remove',
+  loadFavorites: '@movies/loadFavorites',
+  add: '@movies/add',
+  update: '@movies/update',
+  remove: '@movies/remove',
 };

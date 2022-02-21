@@ -11,44 +11,14 @@
       "id": 1
     },
     {
-      "idmovie": 512195,
-      "original_title": "Red Notice",
-      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
-      "runtime": 117,
-      "vote_average": 6.8,
-      "user_average": "0",
-      "nickname": "jesusrodriguezgonzalezgr",
-      "id": 2
-    },
-    {
-      "idmovie": 826749,
-      "original_title": "Fortress",
-      "poster_path": "/vQxtoPJVfpHgL7DCg9hQFZKDWJa.jpg",
-      "runtime": 100,
-      "vote_average": 6.2,
-      "user_average": 2,
-      "nickname": "jesusrodriguezgonzalezgr",
-      "id": 3
-    },
-    {
       "idmovie": 597208,
       "original_title": "Nightmare Alley",
       "poster_path": "/680klE0dIreQQOyWKFgNnCAJtws.jpg",
       "runtime": 150,
       "vote_average": 7.2,
-      "user_average": "0",
+      "user_average": 0,
       "nickname": "jezus9393",
       "id": 4
-    },
-    {
-      "idmovie": 512195,
-      "original_title": "Red Notice",
-      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
-      "runtime": 117,
-      "vote_average": 6.8,
-      "user_average": 2,
-      "nickname": "jezus9393",
-      "id": 5
     },
     {
       "idmovie": 425909,
@@ -61,26 +31,6 @@
       "id": 7
     },
     {
-      "idmovie": 438695,
-      "original_title": "Sing 2",
-      "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
-      "runtime": 110,
-      "vote_average": 8.2,
-      "user_average": "0",
-      "nickname": "jezus9393",
-      "id": 8
-    },
-    {
-      "idmovie": 633802,
-      "original_title": "Приворот. Чёрное венчание",
-      "poster_path": "/2AbGdSGlU6CpiV3lswHUgE5CdAA.jpg",
-      "runtime": 90,
-      "vote_average": 6.8,
-      "user_average": "0",
-      "nickname": "jezus9393",
-      "id": 9
-    },
-    {
       "idmovie": 763152,
       "original_title": "Donde caben dos",
       "poster_path": "/uShw8wJ7K4ySrPtUWjGe8wwJ5fj.jpg",
@@ -91,14 +41,64 @@
       "id": 10
     },
     {
-      "idmovie": 460458,
-      "original_title": "Resident Evil: Welcome to Raccoon City",
-      "poster_path": "/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",
-      "runtime": 107,
-      "vote_average": 6.2,
-      "user_average": 5,
+      "idmovie": 385128,
+      "original_title": "F9",
+      "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
+      "runtime": 143,
+      "vote_average": 7.3,
+      "user_average": "0",
       "nickname": "jesusrodriguezgonzalezgr",
-      "id": 11
+      "id": 13
+    },
+    {
+      "idmovie": 512195,
+      "original_title": "Red Notice",
+      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
+      "runtime": 117,
+      "vote_average": 6.8,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr",
+      "id": 14
+    },
+    {
+      "idmovie": 512195,
+      "original_title": "Red Notice",
+      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
+      "runtime": 117,
+      "vote_average": 6.8,
+      "user_average": 1,
+      "nickname": "jezus9393",
+      "id": 15
+    },
+    {
+      "idmovie": 592508,
+      "original_title": "Sooryavanshi",
+      "poster_path": "/8p3mhjyLjHKtaAv8tFKfvEBtir0.jpg",
+      "runtime": 145,
+      "vote_average": 5.9,
+      "user_average": "0",
+      "nickname": "jezus9393",
+      "id": 16
+    },
+    {
+      "idmovie": 609972,
+      "original_title": "Paranormal Activity: Next of Kin",
+      "poster_path": "/vUZ7gVo4QgtQA5GHQUcPevgMPEg.jpg",
+      "runtime": 98,
+      "vote_average": 6.5,
+      "user_average": "0",
+      "nickname": "jezus9393",
+      "id": 17
+    },
+    {
+      "idmovie": 512195,
+      "original_title": "Red Notice",
+      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
+      "runtime": 117,
+      "vote_average": 6.8,
+      "user_average": "0",
+      "nickname": "jezus9393",
+      "id": 18
     },
     {
       "idmovie": 438695,
@@ -108,7 +108,37 @@
       "vote_average": 8.2,
       "user_average": "0",
       "nickname": "jesusrodriguezgonzalezgr",
-      "id": 12
+      "id": 19
+    },
+    {
+      "idmovie": 787310,
+      "original_title": "Survive the Game",
+      "poster_path": "/xF1uc2pEf34X2G41wvZaF5H0V7C.jpg",
+      "runtime": 97,
+      "vote_average": 5.8,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr",
+      "id": 20
+    },
+    {
+      "idmovie": 787310,
+      "original_title": "Survive the Game",
+      "poster_path": "/xF1uc2pEf34X2G41wvZaF5H0V7C.jpg",
+      "runtime": 97,
+      "vote_average": 5.8,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr",
+      "id": 21
+    },
+    {
+      "idmovie": 385128,
+      "original_title": "F9",
+      "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
+      "runtime": 143,
+      "vote_average": 7.3,
+      "user_average": "0",
+      "nickname": "jesusrodriguezgonzalezgr",
+      "id": 22
     }
   ]
 }

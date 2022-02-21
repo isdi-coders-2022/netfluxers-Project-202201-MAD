@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fav-list {
+  width: 100%;
+  background-color: #0f1b2b;
+  height: 100vh;
+  color: white;
+}
+
+.container-fav-list-title {
+  width: 100%;
+}
+
+.container-fav-list-title h2 {
+  text-align: start;
+  padding-top: 110px;
+  padding-left: 30px;
+}
+
+.container-fav-list-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-fav-list-movie .movie__poster {
+  margin: auto;
+}
+
+.container-fav-list-movie .movie-stars {
+  margin: auto;
+}
+
+.movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 155px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px;
+  padding-top: 20px;
+}
+
+.movie__title {
+  font-family: Actor;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.movie__genred {
+  top: 5px;
+}
+
+.movie__poster-container {
+  position: relative;
+}
+
+.movie__poster {
+  width: 155px;
+  border-radius: 10px;
+}
+
+.delete__icon {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.movie-stars {
+  margin: auto;
+}
+
+.staricon path {
+  color: yellow;
+}
+
+.scoreicon--fade path {
+  color: rgba(255, 255, 0, 0.406);
+}
+
+.item__duration {
+  font-size: 12px;
+  margin: auto;
+}
+
+.movietitle {
+  font-size: 20px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.update-score {
+  margin: 5px;
+}
+
+.update-score__input {
+  width: 10em;
+  background-color: transparent;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.update-score__button {
+  margin: 20px;
+  color: white;
+  background-color: #0f1b2b;
+  border-radius: 5px;
+}
+
+.update-score__button :hover {
+  background-color: red;
+}
+/*# sourceMappingURL=style-fav-list.css.map */

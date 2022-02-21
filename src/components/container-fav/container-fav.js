@@ -5,8 +5,7 @@ import '../favourites/style-fav-list.scss';
 import { Context } from '../contexto/context-provider';
 
 export function ContainerFav() {
-  const { moviesFav } = useContext(Context);
-  console.log(moviesFav);
+  const { favoritesMovies } = useContext(Context);
 
   return (
     <div className="container-fav-list">
@@ -14,8 +13,8 @@ export function ContainerFav() {
         <h2>Favorite Movies</h2>
       </div>
       <div className="container-fav-list-movie">
-        {moviesFav.map((movie) => (
-          <FavoriteMovie movie={movie} />
+        {favoritesMovies.map((movie) => (
+          <FavoriteMovie key={movie.id} movie={movie} />
         ))}
       </div>
     </div>

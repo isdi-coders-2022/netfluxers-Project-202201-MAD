@@ -16,17 +16,17 @@ const actor = {
 
 jest.mock('../../services/apiTmdb.js');
 
-describe('first getMovieGenres from API', () => {
+describe('first getCast from API', () => {
   beforeEach(() => {
     getCast.mockResolvedValue(actor);
   });
-  test('should show Genres-', () => {
+  test('should show Name of cast-', async () => {
     render(
       <BrowserRouter>
         <DetailsCast id="819" />
       </BrowserRouter>
     );
 
-    expect(screen.getByText(/loading/i)).toBeInTheDocument();
+    expect(await screen.findByText(/Edward Norton/i)).toBeInTheDocument();
   });
 });

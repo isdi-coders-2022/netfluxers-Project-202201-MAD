@@ -11,16 +11,6 @@
       "id": 1
     },
     {
-      "idmovie": 597208,
-      "original_title": "Nightmare Alley",
-      "poster_path": "/680klE0dIreQQOyWKFgNnCAJtws.jpg",
-      "runtime": 150,
-      "vote_average": 7.2,
-      "user_average": 0,
-      "nickname": "jezus9393",
-      "id": 4
-    },
-    {
       "idmovie": 425909,
       "original_title": "Ghostbusters: Afterlife",
       "poster_path": "/sg4xJaufDiQl7caFEskBtQXfD4x.jpg",
@@ -61,46 +51,6 @@
       "id": 14
     },
     {
-      "idmovie": 512195,
-      "original_title": "Red Notice",
-      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
-      "runtime": 117,
-      "vote_average": 6.8,
-      "user_average": 1,
-      "nickname": "jezus9393",
-      "id": 15
-    },
-    {
-      "idmovie": 592508,
-      "original_title": "Sooryavanshi",
-      "poster_path": "/8p3mhjyLjHKtaAv8tFKfvEBtir0.jpg",
-      "runtime": 145,
-      "vote_average": 5.9,
-      "user_average": "0",
-      "nickname": "jezus9393",
-      "id": 16
-    },
-    {
-      "idmovie": 609972,
-      "original_title": "Paranormal Activity: Next of Kin",
-      "poster_path": "/vUZ7gVo4QgtQA5GHQUcPevgMPEg.jpg",
-      "runtime": 98,
-      "vote_average": 6.5,
-      "user_average": "0",
-      "nickname": "jezus9393",
-      "id": 17
-    },
-    {
-      "idmovie": 512195,
-      "original_title": "Red Notice",
-      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
-      "runtime": 117,
-      "vote_average": 6.8,
-      "user_average": "0",
-      "nickname": "jezus9393",
-      "id": 18
-    },
-    {
       "idmovie": 438695,
       "original_title": "Sing 2",
       "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
@@ -139,6 +89,26 @@
       "user_average": "0",
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 22
+    },
+    {
+      "idmovie": 385128,
+      "original_title": "F9",
+      "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
+      "runtime": 143,
+      "vote_average": 7.3,
+      "user_average": 0,
+      "nickname": "jezus9393",
+      "id": 23
+    },
+    {
+      "idmovie": 597208,
+      "original_title": "Nightmare Alley",
+      "poster_path": "/680klE0dIreQQOyWKFgNnCAJtws.jpg",
+      "runtime": 150,
+      "vote_average": 7,
+      "user_average": "0",
+      "nickname": "jezus9393",
+      "id": 24
     }
   ]
 }

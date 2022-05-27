@@ -10,5 +10,12 @@ The user, in addition to viewing the most current movies, can log in to the plat
 - Auth0 - To implement a user area in which, once logged in, you can store your favorite movies
 - JEST - To perform component tests
 
+## Project setup & run project
+```
+npm install
+start JSON Server from src/server and npm start
+Lastly, npm start from /
+```
+
 ## View site
 - [Click to access](https://github.com/jesusrodriguezgonzalez)

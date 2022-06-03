@@ -45,9 +45,9 @@ export function ContextProvider({ children }) {
     });
   };
 
-  const updateMovie = (movie, newscore) => {
+  const updateMovie = (movie) => {
     api.updateFav(movie).then((resp) => {
-      dispatch(action.updateMovies(resp.data, newscore));
+      dispatch(action.updateMovies(resp.data));
     });
   };
 

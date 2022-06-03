@@ -19,7 +19,10 @@
 }
 .container-fav-list-movie {
   display: flex;
-
+  flex-wrap: wrap;
+  height: auto;
+  overflow: auto;
+  margin-bottom: 2rem;
   .movie__poster {
     margin: auto;
   }

@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom';
 import './style-fav-list.scss';
 import { AiFillStar } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Context } from '../contexto/context-provider';
 
 export function FavoriteMovie({ movie }) {
-  const { deleteMovie, updateMovie, favoritesMovies } = useContext(Context);
+  const { deleteMovie, updateMovie } = useContext(Context);
 
   const [updateInputText, setUpdateInputText] = useState(0);
 
-  function handleClick(movieDelete) {
+  function handlesDeleteClick(movieDelete) {
     deleteMovie(movieDelete);
   }
 
@@ -36,7 +36,7 @@ export function FavoriteMovie({ movie }) {
         <TiDeleteOutline
           className="delete__icon"
           onClick={() => {
-            handleClick(movie);
+            handlesDeleteClick(movie);
           }}
         />
       </div>

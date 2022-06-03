@@ -31,22 +31,12 @@
       "id": 13
     },
     {
-      "idmovie": 512195,
-      "original_title": "Red Notice",
-      "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
-      "runtime": 117,
-      "vote_average": 6.8,
-      "user_average": 2,
-      "nickname": "jesusrodriguezgonzalezgr",
-      "id": 14
-    },
-    {
       "idmovie": 787310,
       "original_title": "Survive the Game",
       "poster_path": "/xF1uc2pEf34X2G41wvZaF5H0V7C.jpg",
       "runtime": 97,
       "vote_average": 5.8,
-      "user_average": 4,
+      "user_average": 3,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 21
     },
@@ -86,7 +76,7 @@
       "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
       "runtime": 143,
       "vote_average": 7.3,
-      "user_average": 0,
+      "user_average": 2,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 25
     },

@@ -1,16 +1,6 @@
 {
   "movie": [
     {
-      "idmovie": 597208,
-      "original_title": "Nightmare Alley",
-      "poster_path": "/680klE0dIreQQOyWKFgNnCAJtws.jpg",
-      "runtime": 150,
-      "vote_average": 7.2,
-      "user_average": 1,
-      "nickname": "jesusrodriguezgonzalezgr",
-      "id": 1
-    },
-    {
       "idmovie": 425909,
       "original_title": "Ghostbusters: Afterlife",
       "poster_path": "/sg4xJaufDiQl7caFEskBtQXfD4x.jpg",
@@ -26,7 +16,7 @@
       "poster_path": "/uShw8wJ7K4ySrPtUWjGe8wwJ5fj.jpg",
       "runtime": 112,
       "vote_average": 6.7,
-      "user_average": 4,
+      "user_average": 3,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 10
     },
@@ -36,7 +26,7 @@
       "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
       "runtime": 143,
       "vote_average": 7.3,
-      "user_average": "0",
+      "user_average": 4,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 13
     },
@@ -46,37 +36,17 @@
       "poster_path": "/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg",
       "runtime": 117,
       "vote_average": 6.8,
-      "user_average": "0",
+      "user_average": 2,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 14
     },
     {
-      "idmovie": 438695,
-      "original_title": "Sing 2",
-      "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
-      "runtime": 110,
-      "vote_average": 8.2,
-      "user_average": "0",
-      "nickname": "jesusrodriguezgonzalezgr",
-      "id": 19
-    },
-    {
       "idmovie": 787310,
       "original_title": "Survive the Game",
       "poster_path": "/xF1uc2pEf34X2G41wvZaF5H0V7C.jpg",
       "runtime": 97,
       "vote_average": 5.8,
-      "user_average": "0",
-      "nickname": "jesusrodriguezgonzalezgr",
-      "id": 20
-    },
-    {
-      "idmovie": 787310,
-      "original_title": "Survive the Game",
-      "poster_path": "/xF1uc2pEf34X2G41wvZaF5H0V7C.jpg",
-      "runtime": 97,
-      "vote_average": 5.8,
-      "user_average": "0",
+      "user_average": 4,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 21
     },
@@ -86,7 +56,7 @@
       "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
       "runtime": 143,
       "vote_average": 7.3,
-      "user_average": "0",
+      "user_average": 3,
       "nickname": "jesusrodriguezgonzalezgr",
       "id": 22
     },
@@ -109,6 +79,27 @@
       "user_average": "0",
       "nickname": "jezus9393",
       "id": 24
+    },
+    {
+      "idmovie": 385128,
+      "original_title": "F9",
+      "poster_path": "/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
+      "runtime": 143,
+      "vote_average": 7.3,
+      "user_average": 0,
+      "nickname": "jesusrodriguezgonzalezgr",
+      "id": 25
+    },
+    {
+      "idmovie": 597208,
+      "original_title": "Nightmare Alley",
+      "poster_path": "/680klE0dIreQQOyWKFgNnCAJtws.jpg",
+      "runtime": 150,
+      "vote_average": 7.1,
+      "user_average": 3,
+      "nickname": "jesusrodriguezgonzalezgr",
+      "id": 26,
+      "user_avege": 2
     }
   ]
 }

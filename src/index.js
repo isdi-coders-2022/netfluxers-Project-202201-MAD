@@ -10,8 +10,8 @@ import { ContextProvider } from './components/contexto/context-provider';
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
-      domain="dev-2o0hs-n4.us.auth0.com"
-      clientId="dXJFsAhjpTOe1N5rwsof6tgyBGgXVEcu"
+      domain="dev-k3d5mu84.us.auth0.com"
+      clientId="axYPlmkCW9QGzoEICBx3u6dAR7tRWewU"
       redirectUri={window.location.origin}
     >
       <ContextProvider>

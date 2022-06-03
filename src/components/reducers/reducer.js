@@ -9,8 +9,8 @@ export function netfluxReducer(state, action) {
     case moviesActionsList.remove:
       return state.filter((item) => item.id !== action.movie.id);
     case moviesActionsList.update:
-      return state.map((item, newscore) =>
-        item.id === action.movie.id ? { ...item, user_average: newscore } : item
+      return state.map((item) =>
+        item.id === action.movie.id ? action.movie : item
       );
     default:
       return state;

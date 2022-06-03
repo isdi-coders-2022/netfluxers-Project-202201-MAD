@@ -8,7 +8,6 @@ export function removeFav(id) {
 }
 
 export function updateFav(movie) {
-  console.log(movie);
   return axios.patch(API_LOCAL + movie.id, movie);
 }
 

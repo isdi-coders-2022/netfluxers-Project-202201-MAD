@@ -38,7 +38,6 @@ describe('first getMovieGenres from API', () => {
         <GenredMovie genred="80" />
       </BrowserRouter>
     );
-    console.log(prettyDOM(container));
     expect(screen.getByText(/The Amazing Spider/i)).toBeInTheDocument();
   });
 });

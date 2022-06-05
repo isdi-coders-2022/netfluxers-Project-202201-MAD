@@ -8,7 +8,7 @@ function Profile() {
 
   useEffect(() => {
     updateCurrentUser(user.nickname);
-  }, [user.nickname, updateCurrentUser]);
+  }, [updateCurrentUser, user]);
 
   if (isLoading) {
     return <div>Loading ...</div>;

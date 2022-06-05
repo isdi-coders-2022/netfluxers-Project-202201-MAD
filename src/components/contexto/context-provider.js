@@ -27,7 +27,7 @@ export function ContextProvider({ children }) {
         .getAllFav(user.nickname)
         .then((resp) => dispatch(action.loadFavMovies(resp.data)));
     }
-  }, [currentUser, isAuthenticated, user.nickname]);
+  }, [currentUser, isAuthenticated, user]);
 
   function updateCurrentUser(user1) {
     setCurrentUser(user1);

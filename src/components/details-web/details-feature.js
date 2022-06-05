@@ -2,7 +2,6 @@
 import { useEffect, useState, useContext } from 'react';
 import { AiFillStar, AiFillHeart } from 'react-icons/ai';
 import { getDetail } from '../../services/apiTmdb';
-import { getAllFav } from '../../services/apiLocal';
 import { Context } from '../contexto/context-provider';
 import './details-web.scss';
 
